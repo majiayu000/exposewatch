@@ -1,0 +1,4857 @@
+{
+  "generated": "2026-10-22T05:52:15Z",
+  "kev_catalog_version": "2026.10.21",
+  "epss_date": "2026-10-21",
+  "epss_min": 0.1,
+  "products": {
+    "gitea": [
+      {
+        "cve": "CVE-2019-11229",
+        "epss": 0.54955,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_excluding": "1.7.6"
+          },
+          {
+            "exact": "1.8.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-14144",
+        "epss": 0.95432,
+        "cvss": 7.2,
+        "ranges": [
+          {
+            "start_including": "1.1.0",
+            "end_including": "1.12.5"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-1058",
+        "epss": 0.53177,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "end_excluding": "1.16.5"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-30781",
+        "epss": 0.8793,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_excluding": "1.16.7"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-60004",
+        "kev": {
+          "date_added": "2026-08-25",
+          "due_date": "2026-08-28",
+          "ransomware": false
+        },
+        "epss": 0.23988,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "1.17.0",
+            "end_excluding": "1.27.1"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "gitlab": [
+      {
+        "cve": "CVE-2013-4490",
+        "epss": 0.42139,
+        "ranges": [
+          {
+            "exact": "5.0.0"
+          },
+          {
+            "exact": "5.0.1"
+          },
+          {
+            "exact": "5.1.0"
+          },
+          {
+            "exact": "5.2.0"
+          },
+          {
+            "exact": "5.3.0"
+          },
+          {
+            "exact": "5.4.0"
+          },
+          {
+            "exact": "6.0.0"
+          },
+          {
+            "exact": "6.1.0"
+          },
+          {
+            "exact": "6.2.0"
+          },
+          {
+            "exact": "6.2.1"
+          },
+          {
+            "exact": "6.2.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-4340",
+        "epss": 0.10143,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "exact": "8.2.0"
+          },
+          {
+            "exact": "8.2.1"
+          },
+          {
+            "exact": "8.2.2"
+          },
+          {
+            "exact": "8.2.3"
+          },
+          {
+            "exact": "8.2.4"
+          },
+          {
+            "exact": "8.3.0"
+          },
+          {
+            "exact": "8.3.1"
+          },
+          {
+            "exact": "8.3.2"
+          },
+          {
+            "exact": "8.3.3"
+          },
+          {
+            "exact": "8.3.4"
+          },
+          {
+            "exact": "8.3.5"
+          },
+          {
+            "exact": "8.3.6"
+          },
+          {
+            "exact": "8.3.7"
+          },
+          {
+            "exact": "8.3.8"
+          },
+          {
+            "exact": "8.4.0"
+          },
+          {
+            "exact": "8.4.1"
+          },
+          {
+            "exact": "8.4.2"
+          },
+          {
+            "exact": "8.4.3"
+          },
+          {
+            "exact": "8.4.4"
+          },
+          {
+            "exact": "8.4.5"
+          },
+          {
+            "exact": "8.4.6"
+          },
+          {
+            "exact": "8.4.7"
+          },
+          {
+            "exact": "8.4.8"
+          },
+          {
+            "exact": "8.4.9"
+          },
+          {
+            "exact": "8.5.0"
+          },
+          {
+            "exact": "8.5.1"
+          },
+          {
+            "exact": "8.5.2"
+          },
+          {
+            "exact": "8.5.3"
+          },
+          {
+            "exact": "8.5.4"
+          },
+          {
+            "exact": "8.5.5"
+          },
+          {
+            "exact": "8.5.6"
+          },
+          {
+            "exact": "8.5.7"
+          },
+          {
+            "exact": "8.5.8"
+          },
+          {
+            "exact": "8.5.9"
+          },
+          {
+            "exact": "8.5.10"
+          },
+          {
+            "exact": "8.5.11"
+          },
+          {
+            "exact": "8.6.0"
+          },
+          {
+            "exact": "8.6.1"
+          },
+          {
+            "exact": "8.6.2"
+          },
+          {
+            "exact": "8.6.3"
+          },
+          {
+            "exact": "8.6.4"
+          },
+          {
+            "exact": "8.6.5"
+          },
+          {
+            "exact": "8.6.6"
+          },
+          {
+            "exact": "8.6.7"
+          },
+          {
+            "exact": "8.7.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-14364",
+        "epss": 0.47691,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "10.7.7"
+          },
+          {
+            "start_including": "10.8.0",
+            "end_excluding": "10.8.6"
+          },
+          {
+            "start_including": "11.0",
+            "end_excluding": "11.0.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-19571",
+        "epss": 0.32057,
+        "cvss": 7.7,
+        "ranges": [
+          {
+            "start_including": "8.18.0",
+            "end_excluding": "11.3.11"
+          },
+          {
+            "start_including": "11.4.0",
+            "end_excluding": "11.4.8"
+          },
+          {
+            "start_including": "11.5.0",
+            "end_excluding": "11.5.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-19585",
+        "epss": 0.14509,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "8.18.0",
+            "end_excluding": "11.3.11"
+          },
+          {
+            "start_including": "11.4.0",
+            "end_excluding": "11.4.8"
+          },
+          {
+            "start_including": "11.5.0",
+            "end_excluding": "11.5.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-10977",
+        "epss": 0.42741,
+        "cvss": 5.5,
+        "ranges": [
+          {
+            "start_including": "8.5.0",
+            "end_including": "12.9"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-13340",
+        "epss": 0.66748,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "end_excluding": "13.2.10"
+          },
+          {
+            "start_including": "13.3.0",
+            "end_excluding": "13.3.7"
+          },
+          {
+            "start_including": "13.4.0",
+            "end_excluding": "13.4.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-26413",
+        "epss": 0.34931,
+        "cvss": 5.3,
+        "ranges": [
+          {
+            "start_including": "13.4.0",
+            "end_excluding": "13.6.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-22175",
+        "kev": {
+          "date_added": "2026-02-18",
+          "due_date": "2026-03-11",
+          "ransomware": false
+        },
+        "epss": 0.53372,
+        "cvss": 6.8,
+        "ranges": [
+          {
+            "start_including": "10.5.0",
+            "end_excluding": "13.6.7"
+          },
+          {
+            "start_including": "13.7.0",
+            "end_excluding": "13.7.7"
+          },
+          {
+            "start_including": "13.8.0",
+            "end_excluding": "13.8.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-22192",
+        "epss": 0.13108,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "start_including": "13.2.0",
+            "end_excluding": "13.7.9"
+          },
+          {
+            "start_including": "13.8.0",
+            "end_excluding": "13.8.6"
+          },
+          {
+            "start_including": "13.9.0",
+            "end_excluding": "13.9.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-22205",
+        "kev": {
+          "date_added": "2021-11-03",
+          "due_date": "2021-11-17",
+          "ransomware": true
+        },
+        "epss": 0.99731,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "start_including": "11.9.0",
+            "end_excluding": "13.8.8"
+          },
+          {
+            "start_including": "13.9.0",
+            "end_excluding": "13.9.6"
+          },
+          {
+            "start_including": "13.10.0",
+            "end_excluding": "13.10.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-22214",
+        "epss": 0.27806,
+        "cvss": 6.8,
+        "ranges": [
+          {
+            "start_including": "10.5",
+            "end_excluding": "13.10.5"
+          },
+          {
+            "start_including": "13.11",
+            "end_excluding": "13.11.5"
+          },
+          {
+            "start_including": "13.12",
+            "end_excluding": "13.12.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-22238",
+        "epss": 0.71787,
+        "cvss": 6.8,
+        "ranges": [
+          {
+            "start_including": "13.3.0",
+            "end_excluding": "13.12.9"
+          },
+          {
+            "start_including": "14.0.0",
+            "end_excluding": "14.0.7"
+          },
+          {
+            "start_including": "14.1.0",
+            "end_excluding": "14.1.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-22242",
+        "epss": 0.63555,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "11.4.0",
+            "end_excluding": "13.12.9"
+          },
+          {
+            "start_including": "14.0.0",
+            "end_excluding": "14.0.7"
+          },
+          {
+            "start_including": "14.1.0",
+            "end_excluding": "14.1.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-39906",
+        "epss": 0.60729,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "13.5.0",
+            "end_excluding": "14.2.6"
+          },
+          {
+            "start_including": "14.3.0",
+            "end_excluding": "14.3.4"
+          },
+          {
+            "start_including": "14.4.0",
+            "end_excluding": "14.4.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-39935",
+        "kev": {
+          "date_added": "2026-02-03",
+          "due_date": "2026-02-24",
+          "ransomware": false
+        },
+        "epss": 0.3614,
+        "cvss": 6.8,
+        "ranges": [
+          {
+            "start_including": "10.5.0",
+            "end_excluding": "14.3.6"
+          },
+          {
+            "start_including": "14.4.0",
+            "end_excluding": "14.4.4"
+          },
+          {
+            "start_including": "14.5.0",
+            "end_excluding": "14.5.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-4191",
+        "epss": 0.80004,
+        "cvss": 5.3,
+        "ranges": [
+          {
+            "start_including": "13.0.0",
+            "end_excluding": "14.6.5"
+          },
+          {
+            "start_including": "14.7.0",
+            "end_excluding": "14.7.4"
+          },
+          {
+            "start_including": "14.8",
+            "end_excluding": "14.8.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-0735",
+        "epss": 0.13227,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "start_including": "12.0",
+            "end_excluding": "14.6.5"
+          },
+          {
+            "start_including": "14.7",
+            "end_excluding": "14.7.4"
+          },
+          {
+            "start_including": "14.8",
+            "end_excluding": "14.8.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-1162",
+        "epss": 0.75637,
+        "cvss": 9.1,
+        "ranges": [
+          {
+            "start_including": "14.7.0",
+            "end_excluding": "14.7.7"
+          },
+          {
+            "start_including": "14.8.0",
+            "end_excluding": "14.8.5"
+          },
+          {
+            "start_including": "14.9.0",
+            "end_excluding": "14.9.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-1175",
+        "epss": 0.82003,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "14.4.0",
+            "end_excluding": "14.7.7"
+          },
+          {
+            "start_including": "14.8.0",
+            "end_excluding": "14.8.5"
+          },
+          {
+            "start_including": "14.9.0",
+            "end_excluding": "14.9.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-1190",
+        "epss": 0.87946,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "8.3.0",
+            "end_excluding": "14.7.7"
+          },
+          {
+            "start_including": "14.8.0",
+            "end_excluding": "14.8.5"
+          },
+          {
+            "start_including": "14.9.0",
+            "end_excluding": "14.9.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-1680",
+        "epss": 0.15899,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "start_including": "11.10.0",
+            "end_excluding": "14.9.5"
+          },
+          {
+            "start_including": "14.10.0",
+            "end_excluding": "14.10.4"
+          },
+          {
+            "exact": "15.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-2185",
+        "epss": 0.7665,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "start_including": "14.0.0",
+            "end_excluding": "14.10.5"
+          },
+          {
+            "start_including": "15.0.0",
+            "end_excluding": "15.0.4"
+          },
+          {
+            "exact": "15.1.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-2230",
+        "epss": 0.57429,
+        "cvss": 8.1,
+        "ranges": [
+          {
+            "start_including": "14.4.0",
+            "end_excluding": "14.10.5"
+          },
+          {
+            "start_including": "15.0.0",
+            "end_excluding": "15.0.4"
+          },
+          {
+            "exact": "15.1.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-2884",
+        "epss": 0.75718,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "start_including": "11.3.4",
+            "end_excluding": "15.1.5"
+          },
+          {
+            "start_including": "15.2",
+            "end_excluding": "15.2.3"
+          },
+          {
+            "start_including": "15.3",
+            "end_excluding": "15.3.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-2992",
+        "epss": 0.86194,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "start_including": "11.10",
+            "end_excluding": "15.1.6"
+          },
+          {
+            "start_including": "15.2",
+            "end_excluding": "15.2.4"
+          },
+          {
+            "start_including": "15.3",
+            "end_excluding": "15.3.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-3265",
+        "epss": 0.86982,
+        "cvss": 7.3,
+        "ranges": [
+          {
+            "end_excluding": "15.3.5"
+          },
+          {
+            "start_including": "15.4.0",
+            "end_excluding": "15.4.4"
+          },
+          {
+            "start_including": "15.5.0",
+            "end_excluding": "15.5.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-0050",
+        "epss": 0.9242,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "13.7",
+            "end_excluding": "15.7.8"
+          },
+          {
+            "start_including": "15.8",
+            "end_excluding": "15.8.4"
+          },
+          {
+            "start_including": "15.9",
+            "end_excluding": "15.9.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-0921",
+        "epss": 0.84438,
+        "cvss": 4.3,
+        "ranges": [
+          {
+            "start_including": "8.3.0",
+            "end_excluding": "15.10.8"
+          },
+          {
+            "start_including": "15.11.0",
+            "end_excluding": "15.11.7"
+          },
+          {
+            "start_including": "16.0.0",
+            "end_excluding": "16.0.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-2164",
+        "epss": 0.66337,
+        "cvss": 5.4,
+        "ranges": [
+          {
+            "start_including": "15.9",
+            "end_excluding": "16.0.8"
+          },
+          {
+            "start_including": "16.1",
+            "end_excluding": "16.1.3"
+          },
+          {
+            "start_including": "16.2",
+            "end_excluding": "16.2.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-2442",
+        "epss": 0.96058,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "15.11.0",
+            "end_excluding": "15.11.7"
+          },
+          {
+            "start_including": "16.0.0",
+            "end_excluding": "16.0.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-2825",
+        "epss": 0.71641,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "exact": "16.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-3364",
+        "epss": 0.44494,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "8.14",
+            "end_excluding": "16.0.8"
+          },
+          {
+            "start_including": "16.1",
+            "end_excluding": "16.1.3"
+          },
+          {
+            "start_including": "16.2",
+            "end_excluding": "16.2.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-7028",
+        "kev": {
+          "date_added": "2024-05-01",
+          "due_date": "2024-05-22",
+          "ransomware": false
+        },
+        "epss": 0.94458,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "start_including": "16.1.0",
+            "end_excluding": "16.1.6"
+          },
+          {
+            "start_including": "16.2.0",
+            "end_excluding": "16.2.9"
+          },
+          {
+            "start_including": "16.3.0",
+            "end_excluding": "16.3.7"
+          },
+          {
+            "start_including": "16.4.0",
+            "end_excluding": "16.4.5"
+          },
+          {
+            "start_including": "16.5.0",
+            "end_excluding": "16.5.6"
+          },
+          {
+            "start_including": "16.6.0",
+            "end_excluding": "16.6.4"
+          },
+          {
+            "start_including": "16.7.0",
+            "end_excluding": "16.7.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-1451",
+        "epss": 0.51467,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "exact": "16.9.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-2434",
+        "epss": 0.23178,
+        "cvss": 8.5,
+        "ranges": [
+          {
+            "start_including": "16.9.0",
+            "end_excluding": "16.9.6"
+          },
+          {
+            "start_including": "16.10.0",
+            "end_excluding": "16.10.4"
+          },
+          {
+            "exact": "16.11.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-2454",
+        "epss": 0.33301,
+        "cvss": 6.5,
+        "ranges": [
+          {
+            "start_including": "15.11.0",
+            "end_excluding": "16.9.7"
+          },
+          {
+            "start_including": "16.10.0",
+            "end_excluding": "16.10.5"
+          },
+          {
+            "start_including": "16.11.0",
+            "end_excluding": "16.11.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-2651",
+        "epss": 0.33301,
+        "cvss": 6.5,
+        "ranges": [
+          {
+            "end_excluding": "16.9.7"
+          },
+          {
+            "start_including": "16.10.0",
+            "end_excluding": "16.10.5"
+          },
+          {
+            "start_including": "16.11.0",
+            "end_excluding": "16.11.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-2829",
+        "epss": 0.25965,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "12.5.0",
+            "end_excluding": "16.9.6"
+          },
+          {
+            "start_including": "16.10.0",
+            "end_excluding": "16.10.4"
+          },
+          {
+            "exact": "16.11.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-2878",
+        "epss": 0.19726,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "15.7.0",
+            "end_excluding": "16.9.7"
+          },
+          {
+            "start_including": "16.10.0",
+            "end_excluding": "16.10.5"
+          },
+          {
+            "start_including": "16.11.0",
+            "end_excluding": "16.11.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-4024",
+        "epss": 0.14786,
+        "cvss": 7.3,
+        "ranges": [
+          {
+            "start_including": "7.8.0",
+            "end_excluding": "16.9.6"
+          },
+          {
+            "start_including": "16.10.0",
+            "end_excluding": "16.10.4"
+          },
+          {
+            "exact": "16.11.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-45409",
+        "epss": 0.10684,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "end_excluding": "16.11.10"
+          },
+          {
+            "start_including": "17.0.0",
+            "end_excluding": "17.0.8"
+          },
+          {
+            "start_including": "17.1.0",
+            "end_excluding": "17.1.8"
+          },
+          {
+            "start_including": "17.2.0",
+            "end_excluding": "17.2.7"
+          },
+          {
+            "start_including": "17.3.0",
+            "end_excluding": "17.3.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-4901",
+        "epss": 0.33017,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "16.9.0",
+            "end_excluding": "16.11.5"
+          },
+          {
+            "start_including": "17.0.0",
+            "end_excluding": "17.0.3"
+          },
+          {
+            "exact": "17.1.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-8124",
+        "epss": 0.40245,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "16.4.0",
+            "end_excluding": "17.1.7"
+          },
+          {
+            "start_including": "17.2.0",
+            "end_excluding": "17.2.5"
+          },
+          {
+            "start_including": "17.3.0",
+            "end_excluding": "17.3.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-4278",
+        "epss": 0.10883,
+        "cvss": 8.7,
+        "ranges": [
+          {
+            "start_including": "18.0.0",
+            "end_excluding": "18.0.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-5121",
+        "epss": 0.12436,
+        "cvss": 8.5,
+        "ranges": [
+          {
+            "start_including": "17.11.0",
+            "end_excluding": "17.11.4"
+          },
+          {
+            "start_including": "18.0.0",
+            "end_excluding": "18.0.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-19478",
+        "epss": 0.60204,
+        "cvss": 9.4,
+        "ranges": [
+          {
+            "start_including": "18.2.0",
+            "end_excluding": "18.11.11"
+          },
+          {
+            "start_including": "19.0.0",
+            "end_excluding": "19.0.8"
+          },
+          {
+            "start_including": "19.1.0",
+            "end_excluding": "19.1.6"
+          },
+          {
+            "start_including": "19.2.0",
+            "end_excluding": "19.2.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-85706",
+        "kev": {
+          "date_added": "2026-09-11",
+          "due_date": "2026-09-14",
+          "ransomware": false
+        },
+        "epss": 0.91951,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "start_including": "18.7.0",
+            "end_excluding": "18.11.12"
+          },
+          {
+            "start_including": "19.0.0",
+            "end_excluding": "19.0.9"
+          },
+          {
+            "start_including": "19.1.0",
+            "end_excluding": "19.1.8"
+          },
+          {
+            "start_including": "19.2.0",
+            "end_excluding": "19.2.6"
+          },
+          {
+            "start_including": "19.3.0",
+            "end_excluding": "19.3.2"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "grafana": [
+      {
+        "cve": "CVE-2018-15727",
+        "epss": 0.64284,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "2.0.0",
+            "end_including": "2.1.2"
+          },
+          {
+            "start_including": "3.0.0",
+            "end_including": "3.1.1"
+          },
+          {
+            "start_including": "4.0.0",
+            "end_excluding": "4.6.4"
+          },
+          {
+            "start_including": "5.0.0",
+            "end_excluding": "5.2.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-13068",
+        "epss": 0.51915,
+        "cvss": 5.4,
+        "ranges": [
+          {
+            "end_excluding": "6.2.5"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-15043",
+        "epss": 0.63388,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "2.0.0",
+            "end_excluding": "5.4.5"
+          },
+          {
+            "start_including": "6.0.0",
+            "end_excluding": "6.3.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-13379",
+        "epss": 0.99856,
+        "cvss": 8.2,
+        "ranges": [
+          {
+            "start_including": "3.0.1",
+            "end_including": "7.0.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-27358",
+        "epss": 0.83042,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "6.7.3",
+            "end_including": "7.4.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-39226",
+        "kev": {
+          "date_added": "2022-08-25",
+          "due_date": "2022-09-15",
+          "ransomware": false
+        },
+        "epss": 0.99933,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "7.5.11"
+          },
+          {
+            "start_including": "8.0.0",
+            "end_excluding": "8.1.6"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-41174",
+        "epss": 0.85404,
+        "cvss": 6.9,
+        "ranges": [
+          {
+            "start_including": "8.0.0",
+            "end_excluding": "8.2.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-43798",
+        "kev": {
+          "date_added": "2025-10-09",
+          "due_date": "2025-10-30",
+          "ransomware": false
+        },
+        "epss": 0.88503,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "start_including": "8.0.1",
+            "end_excluding": "8.0.7"
+          },
+          {
+            "start_including": "8.1.0",
+            "end_excluding": "8.1.8"
+          },
+          {
+            "start_including": "8.2.0",
+            "end_excluding": "8.2.7"
+          },
+          {
+            "exact": "8.0.0"
+          },
+          {
+            "exact": "8.3.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-43813",
+        "epss": 0.57085,
+        "cvss": 4.3,
+        "ranges": [
+          {
+            "start_including": "5.0.0",
+            "end_excluding": "7.5.12"
+          },
+          {
+            "start_including": "8.0.0",
+            "end_excluding": "8.3.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-26148",
+        "epss": 0.52507,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "7.3.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-31097",
+        "epss": 0.7006,
+        "cvss": 7.3,
+        "ranges": [
+          {
+            "start_including": "8.0.0",
+            "end_excluding": "8.3.10"
+          },
+          {
+            "start_including": "8.4.0",
+            "end_excluding": "8.4.10"
+          },
+          {
+            "start_including": "8.5.0",
+            "end_excluding": "8.5.9"
+          },
+          {
+            "start_including": "9.0.0",
+            "end_excluding": "9.0.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-0507",
+        "epss": 0.1546,
+        "cvss": 7.3,
+        "ranges": [
+          {
+            "start_including": "8.1.0",
+            "end_excluding": "8.5.21"
+          },
+          {
+            "start_including": "9.2.0",
+            "end_excluding": "9.2.13"
+          },
+          {
+            "start_including": "9.3.0",
+            "end_excluding": "9.3.8"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-9264",
+        "epss": 0.97138,
+        "cvss": 9.4,
+        "ranges": [
+          {
+            "exact": "11.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-41115",
+        "epss": 0.16905,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "start_including": "12.0.0",
+            "end_excluding": "12.2.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-4123",
+        "epss": 0.97083,
+        "cvss": 7.6,
+        "ranges": [
+          {
+            "end_excluding": "10.4.18"
+          },
+          {
+            "start_including": "11.2.0",
+            "end_excluding": "11.2.9"
+          },
+          {
+            "start_including": "11.3.0",
+            "end_excluding": "11.3.6"
+          },
+          {
+            "start_including": "11.4.0",
+            "end_excluding": "11.4.4"
+          },
+          {
+            "start_including": "11.5.0",
+            "end_excluding": "11.5.4"
+          },
+          {
+            "start_including": "11.6.0",
+            "end_excluding": "11.6.1"
+          },
+          {
+            "exact": "10.4.18"
+          },
+          {
+            "exact": "11.2.9"
+          },
+          {
+            "exact": "11.3.6"
+          },
+          {
+            "exact": "11.4.4"
+          },
+          {
+            "exact": "11.5.4"
+          },
+          {
+            "exact": "11.6.1"
+          },
+          {
+            "exact": "12.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "home-assistant": [
+      {
+        "cve": "CVE-2023-27482",
+        "epss": 0.72167,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "end_excluding": "2023.3.0"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "jellyfin": [
+      {
+        "cve": "CVE-2021-21402",
+        "epss": 0.79313,
+        "cvss": 7.7,
+        "ranges": [
+          {
+            "end_excluding": "10.7.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-29490",
+        "epss": 0.69856,
+        "cvss": 5.8,
+        "ranges": [
+          {
+            "end_excluding": "10.7.3"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "jenkins": [
+      {
+        "cve": "CVE-2015-5317",
+        "kev": {
+          "date_added": "2023-05-12",
+          "due_date": "2023-06-02",
+          "ransomware": false
+        },
+        "epss": 0.23003,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_including": "1.637"
+          },
+          {
+            "end_including": "1.625.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2015-8103",
+        "epss": 0.86714,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "1.625.2"
+          },
+          {
+            "end_excluding": "1.638"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-0788",
+        "epss": 0.1184,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "exact": "1.642.1"
+          },
+          {
+            "end_including": "1.649"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-0792",
+        "epss": 0.83259,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_including": "1.649"
+          },
+          {
+            "end_including": "1.642.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-9299",
+        "epss": 0.96943,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "2.19.2"
+          },
+          {
+            "end_including": "2.31"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2017-1000353",
+        "kev": {
+          "date_added": "2025-10-02",
+          "due_date": "2025-10-23",
+          "ransomware": false
+        },
+        "epss": 0.99679,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "2.56"
+          },
+          {
+            "end_including": "2.46.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-1000861",
+        "kev": {
+          "date_added": "2022-02-10",
+          "due_date": "2022-08-10",
+          "ransomware": false
+        },
+        "epss": 0.98326,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "2.138.3"
+          },
+          {
+            "end_including": "2.153"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-1999001",
+        "epss": 0.18116,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_including": "2.121.1"
+          },
+          {
+            "start_including": "2.122",
+            "end_including": "2.132"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-1999002",
+        "epss": 0.86463,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_including": "2.121.1"
+          },
+          {
+            "start_including": "2.122",
+            "end_including": "2.132"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-10352",
+        "epss": 0.10225,
+        "cvss": 6.5,
+        "ranges": [
+          {
+            "end_including": "2.176.1"
+          },
+          {
+            "end_including": "2.185"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-10405",
+        "epss": 0.6529,
+        "cvss": 5.4,
+        "ranges": [
+          {
+            "end_including": "2.176.3"
+          },
+          {
+            "end_including": "2.196"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-2230",
+        "epss": 0.82733,
+        "cvss": 5.4,
+        "ranges": [
+          {
+            "end_including": "2.235.3"
+          },
+          {
+            "end_including": "2.251"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-28165",
+        "epss": 0.53861,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_excluding": "2.277.3"
+          },
+          {
+            "end_excluding": "2.286"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-44487",
+        "kev": {
+          "date_added": "2023-10-10",
+          "due_date": "2023-10-31",
+          "ransomware": false
+        },
+        "epss": 0.99999,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_including": "2.414.2"
+          },
+          {
+            "end_including": "2.427"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-23897",
+        "kev": {
+          "date_added": "2024-08-19",
+          "due_date": "2024-09-09",
+          "ransomware": true
+        },
+        "epss": 0.99999,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "2.426.3"
+          },
+          {
+            "end_excluding": "2.442"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-23898",
+        "epss": 0.67151,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "start_including": "2.217",
+            "end_including": "2.441"
+          },
+          {
+            "start_including": "2.222.1",
+            "end_including": "2.426.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-43044",
+        "epss": 0.28782,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_excluding": "2.452.4"
+          },
+          {
+            "end_excluding": "2.471"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "langflow": [
+      {
+        "cve": "CVE-2024-37014",
+        "epss": 0.63674,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "0.6.19"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-7297",
+        "epss": 0.21183,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_excluding": "1.0.13"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-3248",
+        "kev": {
+          "date_added": "2025-05-05",
+          "due_date": "2025-05-26",
+          "ransomware": true
+        },
+        "epss": 0.99993,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "1.3.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-34291",
+        "kev": {
+          "date_added": "2026-05-21",
+          "due_date": "2026-06-04",
+          "ransomware": false
+        },
+        "epss": 0.92808,
+        "cvss": 9.4,
+        "ranges": [
+          {
+            "end_including": "1.6.9"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-0768",
+        "epss": 0.22915,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "exact": "1.4.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-0769",
+        "epss": 0.41219,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "exact": "1.3.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-0770",
+        "kev": {
+          "date_added": "2026-07-21",
+          "due_date": "2026-07-24",
+          "ransomware": false
+        },
+        "epss": 0.62562,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "1.7.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-21445",
+        "epss": 0.33289,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_excluding": "1.7.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-33017",
+        "kev": {
+          "date_added": "2026-03-25",
+          "due_date": "2026-04-08",
+          "ransomware": false
+        },
+        "epss": 0.24755,
+        "cvss": 9.3,
+        "ranges": [
+          {
+            "end_excluding": "1.8.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-55255",
+        "kev": {
+          "date_added": "2026-07-07",
+          "due_date": "2026-07-10",
+          "ransomware": false
+        },
+        "epss": 0.00887,
+        "cvss": 8.4,
+        "ranges": [
+          {
+            "end_excluding": "1.9.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-9198",
+        "kev": {
+          "date_added": "2026-08-04",
+          "due_date": "2026-08-07",
+          "ransomware": false
+        },
+        "epss": 0.28658,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "1.0.0",
+            "end_excluding": "1.10.1"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "n8n": [
+      {
+        "cve": "CVE-2025-68613",
+        "kev": {
+          "date_added": "2026-03-11",
+          "due_date": "2026-03-25",
+          "ransomware": false
+        },
+        "epss": 0.98994,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "start_including": "0.211.0",
+            "end_excluding": "1.120.4"
+          },
+          {
+            "exact": "1.121.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-68668",
+        "epss": 0.13167,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "start_including": "1.0.0",
+            "end_excluding": "2.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-1470",
+        "epss": 0.20683,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "end_excluding": "1.123.17"
+          },
+          {
+            "start_including": "2.0.0",
+            "end_excluding": "2.4.5"
+          },
+          {
+            "exact": "2.5.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-21858",
+        "epss": 0.78188,
+        "cvss": 10.0,
+        "ranges": [
+          {
+            "start_including": "1.65.0",
+            "end_excluding": "1.121.0"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "nextcloud": [],
+    "onlyoffice": [
+      {
+        "cve": "CVE-2021-25830",
+        "epss": 0.11763,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "4.2.0.236",
+            "end_including": "5.6.4.13"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-25831",
+        "epss": 0.11503,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "4.0.0-9",
+            "end_including": "5.6.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-25832",
+        "epss": 0.1259,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "4.0.0-9",
+            "end_including": "6.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-25833",
+        "epss": 0.43534,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "4.2.0.71",
+            "end_including": "5.6.0.21"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-3199",
+        "kev": {
+          "date_added": "2026-10-08",
+          "due_date": "2026-10-11",
+          "ransomware": false
+        },
+        "epss": 0.20136,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "5.6.3"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "owncloud": [
+      {
+        "cve": "CVE-2014-2044",
+        "epss": 0.12388,
+        "ranges": [
+          {
+            "exact": "3.0.0"
+          },
+          {
+            "exact": "3.0.1"
+          },
+          {
+            "exact": "3.0.2"
+          },
+          {
+            "exact": "3.0.3"
+          },
+          {
+            "exact": "4.0.0"
+          },
+          {
+            "exact": "4.0.1"
+          },
+          {
+            "exact": "4.0.2"
+          },
+          {
+            "exact": "4.0.3"
+          },
+          {
+            "exact": "4.0.4"
+          },
+          {
+            "exact": "4.0.5"
+          },
+          {
+            "exact": "4.0.6"
+          },
+          {
+            "exact": "4.0.7"
+          },
+          {
+            "exact": "4.0.8"
+          },
+          {
+            "exact": "4.0.9"
+          },
+          {
+            "exact": "4.0.10"
+          },
+          {
+            "exact": "4.0.11"
+          },
+          {
+            "exact": "4.0.12"
+          },
+          {
+            "exact": "4.0.13"
+          },
+          {
+            "exact": "4.0.14"
+          },
+          {
+            "exact": "4.0.15"
+          },
+          {
+            "exact": "4.0.16"
+          },
+          {
+            "exact": "4.5.0"
+          },
+          {
+            "exact": "4.5.1"
+          },
+          {
+            "exact": "4.5.2"
+          },
+          {
+            "exact": "4.5.3"
+          },
+          {
+            "exact": "4.5.4"
+          },
+          {
+            "exact": "4.5.5"
+          },
+          {
+            "exact": "4.5.6"
+          },
+          {
+            "exact": "4.5.7"
+          },
+          {
+            "exact": "4.5.8"
+          },
+          {
+            "exact": "4.5.9"
+          },
+          {
+            "exact": "4.5.10"
+          },
+          {
+            "exact": "4.5.11"
+          },
+          {
+            "exact": "4.5.12"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2015-4716",
+        "epss": 0.2482,
+        "ranges": [
+          {
+            "exact": "8.0.0"
+          },
+          {
+            "exact": "8.0.2"
+          },
+          {
+            "exact": "8.0.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-49105",
+        "kev": {
+          "date_added": "2026-08-27",
+          "due_date": "2026-08-30",
+          "ransomware": false
+        },
+        "epss": 0.4319,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "10.6.0",
+            "end_excluding": "10.13.1"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "plex": [
+      {
+        "cve": "CVE-2018-13415",
+        "epss": 0.31457,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "exact": "1.13.2.5154"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-5741",
+        "kev": {
+          "date_added": "2023-03-10",
+          "due_date": "2023-03-31",
+          "ransomware": false
+        },
+        "epss": 0.7275,
+        "cvss": 7.2,
+        "ranges": [
+          {
+            "end_excluding": "1.19.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-33959",
+        "epss": 0.15035,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_including": "1.21"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-96652",
+        "kev": {
+          "date_added": "2026-10-20",
+          "due_date": "2026-11-03",
+          "ransomware": false
+        },
+        "epss": 0.00423,
+        "cvss": 5.3,
+        "ranges": [
+          {
+            "end_excluding": "1.43.3.10861"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-96654",
+        "kev": {
+          "date_added": "2026-10-20",
+          "due_date": "2026-10-23",
+          "ransomware": false
+        },
+        "epss": 0.00432,
+        "cvss": 6.9,
+        "ranges": [
+          {
+            "end_excluding": "1.43.3.10861"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-96655",
+        "kev": {
+          "date_added": "2026-10-20",
+          "due_date": "2026-11-03",
+          "ransomware": false
+        },
+        "epss": 0.00423,
+        "cvss": 5.3,
+        "ranges": [
+          {
+            "end_excluding": "1.43.3.10861"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-96656",
+        "kev": {
+          "date_added": "2026-10-20",
+          "due_date": "2026-10-23",
+          "ransomware": false
+        },
+        "epss": 0.00758,
+        "cvss": 8.6,
+        "ranges": [
+          {
+            "end_excluding": "1.43.3.10861"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "portainer": [],
+    "roundcube": [
+      {
+        "cve": "CVE-2008-5619",
+        "epss": 0.58637,
+        "ranges": [
+          {
+            "exact": "0.2.1"
+          },
+          {
+            "exact": "0.2.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2017-16651",
+        "kev": {
+          "date_added": "2021-11-03",
+          "due_date": "2022-05-03",
+          "ransomware": false
+        },
+        "epss": 0.45742,
+        "cvss": 7.8,
+        "ranges": [
+          {
+            "end_including": "1.1.9"
+          },
+          {
+            "exact": "1.2.0"
+          },
+          {
+            "exact": "1.2.1"
+          },
+          {
+            "exact": "1.2.2"
+          },
+          {
+            "exact": "1.2.3"
+          },
+          {
+            "exact": "1.2.4"
+          },
+          {
+            "exact": "1.2.5"
+          },
+          {
+            "exact": "1.2.6"
+          },
+          {
+            "exact": "1.3.0"
+          },
+          {
+            "exact": "1.3.1"
+          },
+          {
+            "exact": "1.3.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-19206",
+        "epss": 0.55852,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "end_excluding": "1.3.8"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-12641",
+        "kev": {
+          "date_added": "2023-06-22",
+          "due_date": "2023-07-13",
+          "ransomware": false
+        },
+        "epss": 0.84456,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "1.2.0",
+            "end_excluding": "1.2.10"
+          },
+          {
+            "start_including": "1.3.0",
+            "end_excluding": "1.3.11"
+          },
+          {
+            "start_including": "1.4.0",
+            "end_excluding": "1.4.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-13965",
+        "kev": {
+          "date_added": "2024-06-26",
+          "due_date": "2024-07-17",
+          "ransomware": false
+        },
+        "epss": 0.76596,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "end_excluding": "1.3.12"
+          },
+          {
+            "start_including": "1.4.0",
+            "end_excluding": "1.4.5"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-35730",
+        "kev": {
+          "date_added": "2023-06-22",
+          "due_date": "2023-07-13",
+          "ransomware": false
+        },
+        "epss": 0.3292,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "end_excluding": "1.2.13"
+          },
+          {
+            "start_including": "1.3.0",
+            "end_excluding": "1.3.16"
+          },
+          {
+            "start_including": "1.4",
+            "end_excluding": "1.4.10"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-44026",
+        "kev": {
+          "date_added": "2023-06-22",
+          "due_date": "2023-07-13",
+          "ransomware": false
+        },
+        "epss": 0.69882,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "1.3.17"
+          },
+          {
+            "start_including": "1.4.0",
+            "end_excluding": "1.4.12"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-43770",
+        "kev": {
+          "date_added": "2024-02-12",
+          "due_date": "2024-03-04",
+          "ransomware": false
+        },
+        "epss": 0.6366,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "end_excluding": "1.4.14"
+          },
+          {
+            "start_including": "1.5.0",
+            "end_excluding": "1.5.4"
+          },
+          {
+            "start_including": "1.6.0",
+            "end_excluding": "1.6.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-5631",
+        "kev": {
+          "date_added": "2023-10-26",
+          "due_date": "2023-11-16",
+          "ransomware": false
+        },
+        "epss": 0.76901,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "end_excluding": "1.4.15"
+          },
+          {
+            "start_including": "1.5.0",
+            "end_excluding": "1.5.5"
+          },
+          {
+            "start_including": "1.6.0",
+            "end_excluding": "1.6.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-37383",
+        "kev": {
+          "date_added": "2024-10-24",
+          "due_date": "2024-11-14",
+          "ransomware": false
+        },
+        "epss": 0.73296,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "end_excluding": "1.5.7"
+          },
+          {
+            "start_including": "1.6.0",
+            "end_excluding": "1.6.7"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-42008",
+        "epss": 0.34207,
+        "cvss": 9.3,
+        "ranges": [
+          {
+            "end_excluding": "1.5.8"
+          },
+          {
+            "start_including": "1.6.0",
+            "end_excluding": "1.6.8"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-42009",
+        "kev": {
+          "date_added": "2025-06-09",
+          "due_date": "2025-06-30",
+          "ransomware": false
+        },
+        "epss": 0.82882,
+        "cvss": 9.3,
+        "ranges": [
+          {
+            "end_excluding": "1.5.8"
+          },
+          {
+            "start_including": "1.6.0",
+            "end_excluding": "1.6.8"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-57004",
+        "epss": 0.39663,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "exact": "1.6.9"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-49113",
+        "kev": {
+          "date_added": "2026-02-20",
+          "due_date": "2026-03-13",
+          "ransomware": false
+        },
+        "epss": 0.98972,
+        "cvss": 9.9,
+        "ranges": [
+          {
+            "end_excluding": "1.5.10"
+          },
+          {
+            "start_including": "1.6.0",
+            "end_excluding": "1.6.11"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-68461",
+        "kev": {
+          "date_added": "2026-02-20",
+          "due_date": "2026-03-13",
+          "ransomware": false
+        },
+        "epss": 0.26842,
+        "cvss": 7.2,
+        "ranges": [
+          {
+            "end_excluding": "1.5.12"
+          },
+          {
+            "start_including": "1.6.0",
+            "end_excluding": "1.6.12"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "strapi": [
+      {
+        "cve": "CVE-2019-18818",
+        "epss": 0.97639,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "1.6.4"
+          },
+          {
+            "exact": "3.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-19609",
+        "epss": 0.54081,
+        "cvss": 7.2,
+        "ranges": [
+          {
+            "end_including": "1.6.4"
+          },
+          {
+            "exact": "3.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-22621",
+        "epss": 0.706,
+        "cvss": 7.2,
+        "ranges": [
+          {
+            "start_including": "3.0.0",
+            "end_excluding": "4.5.6"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-22894",
+        "kev": {
+          "date_added": "2026-10-08",
+          "due_date": "2026-10-11",
+          "ransomware": false
+        },
+        "epss": 0.03609,
+        "cvss": 4.9,
+        "ranges": [
+          {
+            "start_including": "3.2.1",
+            "end_excluding": "4.8.0"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "teamcity": [
+      {
+        "cve": "CVE-2019-15039",
+        "epss": 0.13052,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "exact": "2018.2.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-48343",
+        "epss": 0.59462,
+        "cvss": 5.4,
+        "ranges": [
+          {
+            "end_excluding": "2022.10.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-48428",
+        "epss": 0.6796,
+        "cvss": 4.6,
+        "ranges": [
+          {
+            "end_excluding": "2022.10.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-34220",
+        "epss": 0.61433,
+        "cvss": 4.6,
+        "ranges": [
+          {
+            "end_excluding": "2023.05"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-34225",
+        "epss": 0.6072,
+        "cvss": 4.6,
+        "ranges": [
+          {
+            "end_excluding": "2023.05"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-41249",
+        "epss": 0.55527,
+        "cvss": 4.6,
+        "ranges": [
+          {
+            "end_excluding": "2023.05.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-42793",
+        "kev": {
+          "date_added": "2023-10-04",
+          "due_date": "2023-10-25",
+          "ransomware": true
+        },
+        "epss": 0.99987,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "2023.05.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-23917",
+        "epss": 0.54009,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "2023.11.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-24942",
+        "epss": 0.31977,
+        "cvss": 5.3,
+        "ranges": [
+          {
+            "end_excluding": "2023.11.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-27198",
+        "kev": {
+          "date_added": "2024-03-07",
+          "due_date": "2024-03-28",
+          "ransomware": true
+        },
+        "epss": 0.99938,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "2023.11.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-27199",
+        "kev": {
+          "date_added": "2026-04-20",
+          "due_date": "2026-05-04",
+          "ransomware": true
+        },
+        "epss": 0.99991,
+        "cvss": 7.3,
+        "ranges": [
+          {
+            "end_excluding": "2023.11.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-31138",
+        "epss": 0.74689,
+        "cvss": 4.6,
+        "ranges": [
+          {
+            "end_excluding": "2024.03"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-47949",
+        "epss": 0.23456,
+        "cvss": 4.9,
+        "ranges": [
+          {
+            "end_excluding": "2024.07.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-31140",
+        "epss": 0.28035,
+        "cvss": 4.6,
+        "ranges": [
+          {
+            "end_excluding": "2025.03"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-46618",
+        "epss": 0.63034,
+        "cvss": 3.5,
+        "ranges": [
+          {
+            "end_excluding": "2025.03.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-52876",
+        "epss": 0.37855,
+        "cvss": 5.4,
+        "ranges": [
+          {
+            "end_excluding": "2025.03.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-52877",
+        "epss": 0.36966,
+        "cvss": 4.8,
+        "ranges": [
+          {
+            "end_excluding": "2025.03.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2025-59456",
+        "epss": 0.13566,
+        "cvss": 5.5,
+        "ranges": [
+          {
+            "end_excluding": "2025.07.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-63077",
+        "kev": {
+          "date_added": "2026-08-05",
+          "due_date": "2026-08-08",
+          "ransomware": true
+        },
+        "epss": 0.8957,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "2025.11.7"
+          },
+          {
+            "start_including": "2026.1",
+            "end_excluding": "2026.1.3"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "traefik": [
+      {
+        "cve": "CVE-2023-44487",
+        "kev": {
+          "date_added": "2023-10-10",
+          "due_date": "2023-10-31",
+          "ransomware": false
+        },
+        "epss": 0.99999,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_excluding": "2.10.5"
+          },
+          {
+            "exact": "3.0.0"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "vaultwarden": [
+      {
+        "cve": "CVE-2024-39924",
+        "epss": 0.13328,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "exact": "1.30.3"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "wordpress": [
+      {
+        "cve": "CVE-2004-1584",
+        "epss": 0.11226,
+        "ranges": [
+          {
+            "exact": "1.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2005-2612",
+        "epss": 0.38771,
+        "ranges": [
+          {
+            "exact": "1.0"
+          },
+          {
+            "exact": "1.0.1"
+          },
+          {
+            "exact": "1.0.2"
+          },
+          {
+            "exact": "1.2"
+          },
+          {
+            "exact": "1.5"
+          },
+          {
+            "exact": "1.5.1"
+          },
+          {
+            "exact": "1.5.1.2"
+          },
+          {
+            "exact": "1.5.1.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2006-2667",
+        "epss": 0.1453,
+        "ranges": [
+          {
+            "end_including": "2.0.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2007-0107",
+        "epss": 0.11712,
+        "ranges": [
+          {
+            "end_including": "2.0.5"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2007-0233",
+        "epss": 0.11691,
+        "ranges": [
+          {
+            "exact": "0.6.2"
+          },
+          {
+            "exact": "0.6.2.1"
+          },
+          {
+            "exact": "0.7"
+          },
+          {
+            "exact": "0.71"
+          },
+          {
+            "exact": "1.2"
+          },
+          {
+            "exact": "1.2.1"
+          },
+          {
+            "exact": "1.2.2"
+          },
+          {
+            "exact": "1.5"
+          },
+          {
+            "exact": "1.5.1"
+          },
+          {
+            "exact": "1.5.1.2"
+          },
+          {
+            "exact": "1.5.1.3"
+          },
+          {
+            "exact": "1.5.2"
+          },
+          {
+            "exact": "2.0"
+          },
+          {
+            "exact": "2.0.1"
+          },
+          {
+            "exact": "2.0.2"
+          },
+          {
+            "exact": "2.0.3"
+          },
+          {
+            "exact": "2.0.4"
+          },
+          {
+            "exact": "2.0.5"
+          },
+          {
+            "exact": "2.0.6"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2007-1277",
+        "epss": 0.27775,
+        "ranges": [
+          {
+            "exact": "2.1.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2008-5695",
+        "epss": 0.12008,
+        "ranges": [
+          {
+            "end_including": "2.3.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2009-2335",
+        "epss": 0.85,
+        "ranges": [
+          {
+            "end_excluding": "2.8.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2009-2762",
+        "epss": 0.19636,
+        "ranges": [
+          {
+            "end_including": "2.8.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2010-0682",
+        "epss": 0.10042,
+        "ranges": [
+          {
+            "exact": "2.9"
+          },
+          {
+            "exact": "2.9.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2013-0235",
+        "epss": 0.29565,
+        "ranges": [
+          {
+            "end_including": "3.5.0"
+          },
+          {
+            "exact": "0.71"
+          },
+          {
+            "exact": "1.0"
+          },
+          {
+            "exact": "1.0.1"
+          },
+          {
+            "exact": "1.0.2"
+          },
+          {
+            "exact": "1.1.1"
+          },
+          {
+            "exact": "1.2"
+          },
+          {
+            "exact": "1.2.1"
+          },
+          {
+            "exact": "1.2.2"
+          },
+          {
+            "exact": "1.2.3"
+          },
+          {
+            "exact": "1.2.4"
+          },
+          {
+            "exact": "1.2.5"
+          },
+          {
+            "exact": "1.3"
+          },
+          {
+            "exact": "1.3.2"
+          },
+          {
+            "exact": "1.3.3"
+          },
+          {
+            "exact": "1.5"
+          },
+          {
+            "exact": "1.5.1"
+          },
+          {
+            "exact": "1.5.1.1"
+          },
+          {
+            "exact": "1.5.1.2"
+          },
+          {
+            "exact": "1.5.1.3"
+          },
+          {
+            "exact": "1.5.2"
+          },
+          {
+            "exact": "1.6.2"
+          },
+          {
+            "exact": "2.0"
+          },
+          {
+            "exact": "2.0.1"
+          },
+          {
+            "exact": "2.0.2"
+          },
+          {
+            "exact": "2.0.4"
+          },
+          {
+            "exact": "2.0.5"
+          },
+          {
+            "exact": "2.0.6"
+          },
+          {
+            "exact": "2.0.7"
+          },
+          {
+            "exact": "2.0.8"
+          },
+          {
+            "exact": "2.0.9"
+          },
+          {
+            "exact": "2.0.10"
+          },
+          {
+            "exact": "2.0.11"
+          },
+          {
+            "exact": "2.1"
+          },
+          {
+            "exact": "2.1.1"
+          },
+          {
+            "exact": "2.1.2"
+          },
+          {
+            "exact": "2.1.3"
+          },
+          {
+            "exact": "2.2"
+          },
+          {
+            "exact": "2.2.1"
+          },
+          {
+            "exact": "2.2.2"
+          },
+          {
+            "exact": "2.2.3"
+          },
+          {
+            "exact": "2.3"
+          },
+          {
+            "exact": "2.3.1"
+          },
+          {
+            "exact": "2.3.2"
+          },
+          {
+            "exact": "2.3.3"
+          },
+          {
+            "exact": "2.5"
+          },
+          {
+            "exact": "2.5.1"
+          },
+          {
+            "exact": "2.6"
+          },
+          {
+            "exact": "2.6.1"
+          },
+          {
+            "exact": "2.6.2"
+          },
+          {
+            "exact": "2.6.3"
+          },
+          {
+            "exact": "2.6.5"
+          },
+          {
+            "exact": "2.7"
+          },
+          {
+            "exact": "2.7.1"
+          },
+          {
+            "exact": "2.8"
+          },
+          {
+            "exact": "2.8.1"
+          },
+          {
+            "exact": "2.8.2"
+          },
+          {
+            "exact": "2.8.3"
+          },
+          {
+            "exact": "2.8.4"
+          },
+          {
+            "exact": "2.8.5"
+          },
+          {
+            "exact": "2.8.5.1"
+          },
+          {
+            "exact": "2.8.5.2"
+          },
+          {
+            "exact": "2.8.6"
+          },
+          {
+            "exact": "2.9"
+          },
+          {
+            "exact": "2.9.1"
+          },
+          {
+            "exact": "2.9.1.1"
+          },
+          {
+            "exact": "2.9.2"
+          },
+          {
+            "exact": "3.3"
+          },
+          {
+            "exact": "3.3.1"
+          },
+          {
+            "exact": "3.3.2"
+          },
+          {
+            "exact": "3.3.3"
+          },
+          {
+            "exact": "3.4.0"
+          },
+          {
+            "exact": "3.4.1"
+          },
+          {
+            "exact": "3.4.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2013-7240",
+        "epss": 0.19641,
+        "ranges": [],
+        "range_source": "none"
+      },
+      {
+        "cve": "CVE-2014-5266",
+        "epss": 0.24385,
+        "ranges": [
+          {
+            "end_including": "3.9.1"
+          },
+          {
+            "exact": "3.0"
+          },
+          {
+            "exact": "3.0.1"
+          },
+          {
+            "exact": "3.0.2"
+          },
+          {
+            "exact": "3.0.3"
+          },
+          {
+            "exact": "3.0.4"
+          },
+          {
+            "exact": "3.0.5"
+          },
+          {
+            "exact": "3.0.6"
+          },
+          {
+            "exact": "3.1"
+          },
+          {
+            "exact": "3.1.1"
+          },
+          {
+            "exact": "3.1.2"
+          },
+          {
+            "exact": "3.1.3"
+          },
+          {
+            "exact": "3.1.4"
+          },
+          {
+            "exact": "3.2"
+          },
+          {
+            "exact": "3.2.1"
+          },
+          {
+            "exact": "3.3"
+          },
+          {
+            "exact": "3.3.1"
+          },
+          {
+            "exact": "3.3.2"
+          },
+          {
+            "exact": "3.3.3"
+          },
+          {
+            "exact": "3.4.0"
+          },
+          {
+            "exact": "3.4.1"
+          },
+          {
+            "exact": "3.4.2"
+          },
+          {
+            "exact": "3.5.0"
+          },
+          {
+            "exact": "3.5.1"
+          },
+          {
+            "exact": "3.6"
+          },
+          {
+            "exact": "3.6.1"
+          },
+          {
+            "exact": "3.7"
+          },
+          {
+            "exact": "3.7.1"
+          },
+          {
+            "exact": "3.8"
+          },
+          {
+            "exact": "3.8.1"
+          },
+          {
+            "exact": "3.9.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2014-9034",
+        "epss": 0.82702,
+        "ranges": [
+          {
+            "end_including": "3.7.4"
+          },
+          {
+            "exact": "3.8"
+          },
+          {
+            "exact": "3.8.1"
+          },
+          {
+            "exact": "3.8.2"
+          },
+          {
+            "exact": "3.8.3"
+          },
+          {
+            "exact": "3.8.4"
+          },
+          {
+            "exact": "3.9"
+          },
+          {
+            "exact": "3.9.1"
+          },
+          {
+            "exact": "3.9.2"
+          },
+          {
+            "exact": "4.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2015-3440",
+        "epss": 0.16889,
+        "ranges": [
+          {
+            "end_including": "4.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-10033",
+        "kev": {
+          "date_added": "2025-07-07",
+          "due_date": "2025-07-28",
+          "ransomware": false
+        },
+        "epss": 0.99714,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "4.7"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-10045",
+        "epss": 0.97738,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "4.7"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-6896",
+        "epss": 0.38068,
+        "cvss": 7.1,
+        "ranges": [
+          {
+            "exact": "4.5.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2016-6897",
+        "epss": 0.2882,
+        "cvss": 6.5,
+        "ranges": [
+          {
+            "end_including": "4.5.5"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2017-1001000",
+        "epss": 0.84935,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "exact": "4.7"
+          },
+          {
+            "exact": "4.7.1"
+          },
+          {
+            "exact": "4.7.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2017-14719",
+        "epss": 0.12373,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "exact": "3.0"
+          },
+          {
+            "exact": "3.0.1"
+          },
+          {
+            "exact": "3.0.2"
+          },
+          {
+            "exact": "3.0.3"
+          },
+          {
+            "exact": "3.0.4"
+          },
+          {
+            "exact": "3.0.5"
+          },
+          {
+            "exact": "3.0.6"
+          },
+          {
+            "exact": "3.1"
+          },
+          {
+            "exact": "3.1.1"
+          },
+          {
+            "exact": "3.1.2"
+          },
+          {
+            "exact": "3.1.3"
+          },
+          {
+            "exact": "3.1.4"
+          },
+          {
+            "exact": "3.2"
+          },
+          {
+            "exact": "3.2.1"
+          },
+          {
+            "exact": "3.3"
+          },
+          {
+            "exact": "3.3.1"
+          },
+          {
+            "exact": "3.3.2"
+          },
+          {
+            "exact": "3.3.3"
+          },
+          {
+            "exact": "3.4"
+          },
+          {
+            "exact": "3.4.1"
+          },
+          {
+            "exact": "3.4.2"
+          },
+          {
+            "exact": "3.5"
+          },
+          {
+            "exact": "3.5.1"
+          },
+          {
+            "exact": "3.5.2"
+          },
+          {
+            "exact": "3.6"
+          },
+          {
+            "exact": "3.6.1"
+          },
+          {
+            "exact": "3.7"
+          },
+          {
+            "exact": "3.7.1"
+          },
+          {
+            "exact": "3.7.2"
+          },
+          {
+            "exact": "3.7.3"
+          },
+          {
+            "exact": "3.7.4"
+          },
+          {
+            "exact": "3.7.5"
+          },
+          {
+            "exact": "3.7.6"
+          },
+          {
+            "exact": "3.7.7"
+          },
+          {
+            "exact": "3.7.8"
+          },
+          {
+            "exact": "3.7.9"
+          },
+          {
+            "exact": "3.7.10"
+          },
+          {
+            "exact": "3.7.11"
+          },
+          {
+            "exact": "3.7.12"
+          },
+          {
+            "exact": "3.7.13"
+          },
+          {
+            "exact": "3.7.14"
+          },
+          {
+            "exact": "3.7.15"
+          },
+          {
+            "exact": "3.7.16"
+          },
+          {
+            "exact": "3.7.17"
+          },
+          {
+            "exact": "3.7.18"
+          },
+          {
+            "exact": "3.7.19"
+          },
+          {
+            "exact": "3.7.20"
+          },
+          {
+            "exact": "3.7.21"
+          },
+          {
+            "exact": "3.7.22"
+          },
+          {
+            "exact": "3.8"
+          },
+          {
+            "exact": "3.8.1"
+          },
+          {
+            "exact": "3.8.2"
+          },
+          {
+            "exact": "3.8.3"
+          },
+          {
+            "exact": "3.8.4"
+          },
+          {
+            "exact": "3.8.5"
+          },
+          {
+            "exact": "3.8.6"
+          },
+          {
+            "exact": "3.8.7"
+          },
+          {
+            "exact": "3.8.8"
+          },
+          {
+            "exact": "3.8.9"
+          },
+          {
+            "exact": "3.8.10"
+          },
+          {
+            "exact": "3.8.11"
+          },
+          {
+            "exact": "3.8.12"
+          },
+          {
+            "exact": "3.8.13"
+          },
+          {
+            "exact": "3.8.14"
+          },
+          {
+            "exact": "3.8.15"
+          },
+          {
+            "exact": "3.8.16"
+          },
+          {
+            "exact": "3.8.17"
+          },
+          {
+            "exact": "3.8.18"
+          },
+          {
+            "exact": "3.8.19"
+          },
+          {
+            "exact": "3.8.20"
+          },
+          {
+            "exact": "3.8.21"
+          },
+          {
+            "exact": "3.8.22"
+          },
+          {
+            "exact": "3.9"
+          },
+          {
+            "exact": "3.9.1"
+          },
+          {
+            "exact": "3.9.2"
+          },
+          {
+            "exact": "3.9.3"
+          },
+          {
+            "exact": "3.9.4"
+          },
+          {
+            "exact": "3.9.5"
+          },
+          {
+            "exact": "3.9.6"
+          },
+          {
+            "exact": "3.9.7"
+          },
+          {
+            "exact": "3.9.8"
+          },
+          {
+            "exact": "3.9.9"
+          },
+          {
+            "exact": "3.9.10"
+          },
+          {
+            "exact": "3.9.11"
+          },
+          {
+            "exact": "3.9.12"
+          },
+          {
+            "exact": "3.9.13"
+          },
+          {
+            "exact": "3.9.14"
+          },
+          {
+            "exact": "3.9.15"
+          },
+          {
+            "exact": "3.9.16"
+          },
+          {
+            "exact": "3.9.17"
+          },
+          {
+            "exact": "3.9.18"
+          },
+          {
+            "exact": "3.9.19"
+          },
+          {
+            "exact": "3.9.20"
+          },
+          {
+            "exact": "4.0"
+          },
+          {
+            "exact": "4.0.1"
+          },
+          {
+            "exact": "4.0.2"
+          },
+          {
+            "exact": "4.0.3"
+          },
+          {
+            "exact": "4.0.4"
+          },
+          {
+            "exact": "4.0.5"
+          },
+          {
+            "exact": "4.0.6"
+          },
+          {
+            "exact": "4.0.7"
+          },
+          {
+            "exact": "4.0.8"
+          },
+          {
+            "exact": "4.0.9"
+          },
+          {
+            "exact": "4.0.10"
+          },
+          {
+            "exact": "4.0.11"
+          },
+          {
+            "exact": "4.0.12"
+          },
+          {
+            "exact": "4.0.13"
+          },
+          {
+            "exact": "4.0.14"
+          },
+          {
+            "exact": "4.0.15"
+          },
+          {
+            "exact": "4.0.16"
+          },
+          {
+            "exact": "4.0.17"
+          },
+          {
+            "exact": "4.0.18"
+          },
+          {
+            "exact": "4.0.19"
+          },
+          {
+            "exact": "4.1"
+          },
+          {
+            "exact": "4.1.1"
+          },
+          {
+            "exact": "4.1.2"
+          },
+          {
+            "exact": "4.1.3"
+          },
+          {
+            "exact": "4.1.4"
+          },
+          {
+            "exact": "4.1.5"
+          },
+          {
+            "exact": "4.1.6"
+          },
+          {
+            "exact": "4.1.7"
+          },
+          {
+            "exact": "4.1.8"
+          },
+          {
+            "exact": "4.1.9"
+          },
+          {
+            "exact": "4.1.10"
+          },
+          {
+            "exact": "4.1.11"
+          },
+          {
+            "exact": "4.1.12"
+          },
+          {
+            "exact": "4.1.13"
+          },
+          {
+            "exact": "4.1.14"
+          },
+          {
+            "exact": "4.1.15"
+          },
+          {
+            "exact": "4.1.16"
+          },
+          {
+            "exact": "4.1.17"
+          },
+          {
+            "exact": "4.1.18"
+          },
+          {
+            "exact": "4.1.19"
+          },
+          {
+            "exact": "4.2"
+          },
+          {
+            "exact": "4.2.1"
+          },
+          {
+            "exact": "4.2.2"
+          },
+          {
+            "exact": "4.2.3"
+          },
+          {
+            "exact": "4.2.4"
+          },
+          {
+            "exact": "4.2.5"
+          },
+          {
+            "exact": "4.2.6"
+          },
+          {
+            "exact": "4.2.7"
+          },
+          {
+            "exact": "4.2.8"
+          },
+          {
+            "exact": "4.2.9"
+          },
+          {
+            "exact": "4.2.10"
+          },
+          {
+            "exact": "4.2.11"
+          },
+          {
+            "exact": "4.2.12"
+          },
+          {
+            "exact": "4.2.13"
+          },
+          {
+            "exact": "4.2.14"
+          },
+          {
+            "exact": "4.2.15"
+          },
+          {
+            "exact": "4.2.16"
+          },
+          {
+            "exact": "4.3"
+          },
+          {
+            "exact": "4.3.1"
+          },
+          {
+            "exact": "4.3.2"
+          },
+          {
+            "exact": "4.3.3"
+          },
+          {
+            "exact": "4.3.4"
+          },
+          {
+            "exact": "4.3.5"
+          },
+          {
+            "exact": "4.3.6"
+          },
+          {
+            "exact": "4.3.7"
+          },
+          {
+            "exact": "4.3.8"
+          },
+          {
+            "exact": "4.3.9"
+          },
+          {
+            "exact": "4.3.10"
+          },
+          {
+            "exact": "4.3.11"
+          },
+          {
+            "exact": "4.3.12"
+          },
+          {
+            "exact": "4.4"
+          },
+          {
+            "exact": "4.4.1"
+          },
+          {
+            "exact": "4.4.2"
+          },
+          {
+            "exact": "4.4.3"
+          },
+          {
+            "exact": "4.4.4"
+          },
+          {
+            "exact": "4.4.5"
+          },
+          {
+            "exact": "4.4.6"
+          },
+          {
+            "exact": "4.4.7"
+          },
+          {
+            "exact": "4.4.8"
+          },
+          {
+            "exact": "4.4.9"
+          },
+          {
+            "exact": "4.4.10"
+          },
+          {
+            "exact": "4.4.11"
+          },
+          {
+            "exact": "4.5"
+          },
+          {
+            "exact": "4.5.1"
+          },
+          {
+            "exact": "4.5.2"
+          },
+          {
+            "exact": "4.5.3"
+          },
+          {
+            "exact": "4.5.4"
+          },
+          {
+            "exact": "4.5.5"
+          },
+          {
+            "exact": "4.5.6"
+          },
+          {
+            "exact": "4.5.7"
+          },
+          {
+            "exact": "4.5.8"
+          },
+          {
+            "exact": "4.5.9"
+          },
+          {
+            "exact": "4.5.10"
+          },
+          {
+            "exact": "4.6"
+          },
+          {
+            "exact": "4.6.1"
+          },
+          {
+            "exact": "4.6.2"
+          },
+          {
+            "exact": "4.6.3"
+          },
+          {
+            "exact": "4.6.4"
+          },
+          {
+            "exact": "4.6.5"
+          },
+          {
+            "exact": "4.6.6"
+          },
+          {
+            "exact": "4.6.7"
+          },
+          {
+            "exact": "4.7"
+          },
+          {
+            "exact": "4.7.1"
+          },
+          {
+            "exact": "4.7.2"
+          },
+          {
+            "exact": "4.7.3"
+          },
+          {
+            "exact": "4.7.4"
+          },
+          {
+            "exact": "4.7.5"
+          },
+          {
+            "exact": "4.8"
+          },
+          {
+            "exact": "4.8.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2017-5487",
+        "epss": 0.87299,
+        "cvss": 5.3,
+        "ranges": [
+          {
+            "end_including": "4.7"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2017-5611",
+        "epss": 0.10202,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_including": "4.7.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2017-8295",
+        "epss": 0.26699,
+        "cvss": 5.9,
+        "ranges": [
+          {
+            "end_including": "4.7.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-12895",
+        "epss": 0.62162,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_excluding": "4.9.7"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-14028",
+        "epss": 0.15167,
+        "cvss": 7.2,
+        "ranges": [
+          {
+            "exact": "4.9.7"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-20148",
+        "epss": 0.26819,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "4.9.9"
+          },
+          {
+            "start_including": "5.0",
+            "end_excluding": "5.0.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2018-6389",
+        "epss": 0.72671,
+        "cvss": 7.5,
+        "ranges": [
+          {
+            "end_including": "4.9.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-17671",
+        "epss": 0.36503,
+        "cvss": 5.3,
+        "ranges": [
+          {
+            "end_excluding": "5.2.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-8942",
+        "epss": 0.82736,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_excluding": "4.9.9"
+          },
+          {
+            "exact": "5.0"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-8943",
+        "epss": 0.91985,
+        "cvss": 6.5,
+        "ranges": [
+          {
+            "end_including": "5.0.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2019-9787",
+        "epss": 0.38557,
+        "cvss": 8.8,
+        "ranges": [
+          {
+            "end_excluding": "5.1.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-11027",
+        "epss": 0.13625,
+        "cvss": 6.1,
+        "ranges": [
+          {
+            "start_including": "3.7",
+            "end_excluding": "3.7.33"
+          },
+          {
+            "start_including": "3.8",
+            "end_excluding": "3.8.33"
+          },
+          {
+            "start_including": "3.9",
+            "end_excluding": "3.9.31"
+          },
+          {
+            "start_including": "4.0",
+            "end_excluding": "4.0.30"
+          },
+          {
+            "start_including": "4.1",
+            "end_excluding": "4.1.30"
+          },
+          {
+            "start_including": "4.2",
+            "end_excluding": "4.2.27"
+          },
+          {
+            "start_including": "4.3",
+            "end_excluding": "4.3.23"
+          },
+          {
+            "start_including": "4.4",
+            "end_excluding": "4.4.22"
+          },
+          {
+            "start_including": "4.5",
+            "end_excluding": "4.5.21"
+          },
+          {
+            "start_including": "4.6",
+            "end_excluding": "4.6.18"
+          },
+          {
+            "start_including": "4.7",
+            "end_excluding": "4.7.17"
+          },
+          {
+            "start_including": "4.8",
+            "end_excluding": "4.8.13"
+          },
+          {
+            "start_including": "4.9",
+            "end_excluding": "4.9.14"
+          },
+          {
+            "start_including": "5.0",
+            "end_excluding": "5.0.9"
+          },
+          {
+            "start_including": "5.1",
+            "end_excluding": "5.1.5"
+          },
+          {
+            "start_including": "5.2",
+            "end_excluding": "5.2.6"
+          },
+          {
+            "start_including": "5.3",
+            "end_excluding": "5.3.3"
+          },
+          {
+            "exact": "5.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2020-28032",
+        "epss": 0.15703,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "end_excluding": "5.5.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-29447",
+        "epss": 0.85719,
+        "cvss": 7.1,
+        "ranges": [
+          {
+            "start_including": "5.6.0",
+            "end_excluding": "5.7.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2021-44223",
+        "epss": 0.28983,
+        "cvss": 8.1,
+        "ranges": [
+          {
+            "end_excluding": "5.8"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-21661",
+        "epss": 0.97795,
+        "cvss": 8.0,
+        "ranges": [
+          {
+            "start_including": "3.7",
+            "end_excluding": "3.7.37"
+          },
+          {
+            "start_including": "3.8",
+            "end_excluding": "3.8.37"
+          },
+          {
+            "start_including": "3.9",
+            "end_excluding": "3.9.35"
+          },
+          {
+            "start_including": "4.0",
+            "end_excluding": "4.0.34"
+          },
+          {
+            "start_including": "4.1",
+            "end_excluding": "4.1.34"
+          },
+          {
+            "start_including": "4.2",
+            "end_excluding": "4.2.31"
+          },
+          {
+            "start_including": "4.3",
+            "end_excluding": "4.3.27"
+          },
+          {
+            "start_including": "4.4",
+            "end_excluding": "4.4.26"
+          },
+          {
+            "start_including": "4.5",
+            "end_excluding": "4.5.25"
+          },
+          {
+            "start_including": "4.6",
+            "end_excluding": "4.6.22"
+          },
+          {
+            "start_including": "4.7",
+            "end_excluding": "4.7.22"
+          },
+          {
+            "start_including": "4.8",
+            "end_excluding": "4.8.18"
+          },
+          {
+            "start_including": "4.9",
+            "end_excluding": "4.9.19"
+          },
+          {
+            "start_including": "5.0",
+            "end_excluding": "5.0.15"
+          },
+          {
+            "start_including": "5.1",
+            "end_excluding": "5.1.12"
+          },
+          {
+            "start_including": "5.2",
+            "end_excluding": "5.2.14"
+          },
+          {
+            "start_including": "5.3",
+            "end_excluding": "5.3.11"
+          },
+          {
+            "start_including": "5.4",
+            "end_excluding": "5.4.9"
+          },
+          {
+            "start_including": "5.5",
+            "end_excluding": "5.5.8"
+          },
+          {
+            "start_including": "5.6",
+            "end_excluding": "5.6.7"
+          },
+          {
+            "start_including": "5.7",
+            "end_excluding": "5.7.5"
+          },
+          {
+            "start_including": "5.8",
+            "end_excluding": "5.8.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2022-21662",
+        "epss": 0.64529,
+        "cvss": 8.0,
+        "ranges": [
+          {
+            "end_excluding": "5.8.3"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2023-2745",
+        "epss": 0.79527,
+        "cvss": 5.4,
+        "ranges": [
+          {
+            "end_excluding": "4.1.38"
+          },
+          {
+            "start_including": "4.2",
+            "end_excluding": "4.2.35"
+          },
+          {
+            "start_including": "4.3",
+            "end_excluding": "4.3.31"
+          },
+          {
+            "start_including": "4.4",
+            "end_excluding": "4.4.30"
+          },
+          {
+            "start_including": "4.5",
+            "end_excluding": "4.5.29"
+          },
+          {
+            "start_including": "4.6",
+            "end_excluding": "4.6.26"
+          },
+          {
+            "start_including": "4.7",
+            "end_excluding": "4.7.26"
+          },
+          {
+            "start_including": "4.8",
+            "end_excluding": "4.8.22"
+          },
+          {
+            "start_including": "4.9",
+            "end_excluding": "4.9.23"
+          },
+          {
+            "start_including": "5.0",
+            "end_excluding": "5.0.19"
+          },
+          {
+            "start_including": "5.1",
+            "end_excluding": "5.1.16"
+          },
+          {
+            "start_including": "5.2",
+            "end_excluding": "5.2.18"
+          },
+          {
+            "start_including": "5.3",
+            "end_excluding": "5.3.15"
+          },
+          {
+            "start_including": "5.4",
+            "end_excluding": "5.4.13"
+          },
+          {
+            "start_including": "5.5",
+            "end_excluding": "5.5.12"
+          },
+          {
+            "start_including": "5.6",
+            "end_excluding": "5.6.11"
+          },
+          {
+            "start_including": "5.7",
+            "end_excluding": "5.7.9"
+          },
+          {
+            "start_including": "5.8",
+            "end_excluding": "5.8.7"
+          },
+          {
+            "start_including": "5.9",
+            "end_excluding": "5.9.6"
+          },
+          {
+            "start_including": "6.0",
+            "end_excluding": "6.0.4"
+          },
+          {
+            "start_including": "6.1",
+            "end_excluding": "6.1.2"
+          },
+          {
+            "exact": "6.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2024-4439",
+        "epss": 0.71024,
+        "cvss": 7.2,
+        "ranges": [
+          {
+            "start_including": "6.0",
+            "end_including": "6.0.7"
+          },
+          {
+            "start_including": "6.1",
+            "end_including": "6.1.5"
+          },
+          {
+            "start_including": "6.2",
+            "end_including": "6.2.4"
+          },
+          {
+            "start_including": "6.3",
+            "end_including": "6.3.3"
+          },
+          {
+            "start_including": "6.4.0",
+            "end_including": "6.4.3"
+          },
+          {
+            "start_including": "6.5",
+            "end_including": "6.5.1"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-60137",
+        "kev": {
+          "date_added": "2026-07-21",
+          "due_date": "2026-08-04",
+          "ransomware": false
+        },
+        "epss": 0.05323,
+        "cvss": 5.9,
+        "ranges": [
+          {
+            "start_including": "6.8",
+            "end_excluding": "6.8.6"
+          },
+          {
+            "start_including": "6.9",
+            "end_excluding": "6.9.5"
+          },
+          {
+            "start_including": "7.0",
+            "end_excluding": "7.0.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-63030",
+        "kev": {
+          "date_added": "2026-07-21",
+          "due_date": "2026-07-24",
+          "ransomware": false
+        },
+        "epss": 0.10649,
+        "cvss": 9.8,
+        "ranges": [
+          {
+            "start_including": "6.9",
+            "end_excluding": "6.9.5"
+          },
+          {
+            "start_including": "7.0",
+            "end_excluding": "7.0.2"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-87902",
+        "kev": {
+          "date_added": "2026-09-25",
+          "due_date": "2026-09-28",
+          "ransomware": false
+        },
+        "epss": 0.39979,
+        "cvss": 8.1,
+        "ranges": [
+          {
+            "end_excluding": "4.7.37"
+          },
+          {
+            "start_including": "4.8",
+            "end_excluding": "4.8.32"
+          },
+          {
+            "start_including": "4.9",
+            "end_excluding": "4.9.33"
+          },
+          {
+            "start_including": "5.0",
+            "end_excluding": "5.0.29"
+          },
+          {
+            "start_including": "5.1",
+            "end_excluding": "5.1.26"
+          },
+          {
+            "start_including": "5.2",
+            "end_excluding": "5.2.28"
+          },
+          {
+            "start_including": "5.3",
+            "end_excluding": "5.3.25"
+          },
+          {
+            "start_including": "5.4",
+            "end_excluding": "5.4.23"
+          },
+          {
+            "start_including": "5.5",
+            "end_excluding": "5.5.22"
+          },
+          {
+            "start_including": "5.6",
+            "end_excluding": "5.6.21"
+          },
+          {
+            "start_including": "5.7",
+            "end_excluding": "5.7.19"
+          },
+          {
+            "start_including": "5.8",
+            "end_excluding": "5.8.17"
+          },
+          {
+            "start_including": "5.9",
+            "end_excluding": "5.9.18"
+          },
+          {
+            "start_including": "6.0",
+            "end_excluding": "6.0.16"
+          },
+          {
+            "start_including": "6.1",
+            "end_excluding": "6.1.14"
+          },
+          {
+            "start_including": "6.2",
+            "end_excluding": "6.2.13"
+          },
+          {
+            "start_including": "6.3",
+            "end_excluding": "6.3.12"
+          },
+          {
+            "start_including": "6.4",
+            "end_excluding": "6.4.12"
+          },
+          {
+            "start_including": "6.5",
+            "end_excluding": "6.5.12"
+          },
+          {
+            "start_including": "6.6",
+            "end_excluding": "6.6.9"
+          },
+          {
+            "start_including": "6.7",
+            "end_excluding": "6.7.9"
+          },
+          {
+            "start_including": "6.8",
+            "end_excluding": "6.8.10"
+          },
+          {
+            "start_including": "6.9",
+            "end_excluding": "6.9.9"
+          },
+          {
+            "start_including": "7.0",
+            "end_excluding": "7.0.6"
+          },
+          {
+            "start_including": "7.1",
+            "end_excluding": "7.1.2"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ],
+    "zammad": [
+      {
+        "cve": "CVE-2026-102489",
+        "kev": {
+          "date_added": "2026-10-02",
+          "due_date": "2026-10-05",
+          "ransomware": false
+        },
+        "epss": 0.01255,
+        "cvss": 9.4,
+        "ranges": [
+          {
+            "start_including": "6.3.0",
+            "end_including": "6.5.4"
+          }
+        ],
+        "range_source": "nvd"
+      },
+      {
+        "cve": "CVE-2026-102490",
+        "kev": {
+          "date_added": "2026-10-02",
+          "due_date": "2026-10-05",
+          "ransomware": false
+        },
+        "epss": 0.0055,
+        "cvss": 9.4,
+        "ranges": [
+          {
+            "end_excluding": "7.2.2"
+          }
+        ],
+        "range_source": "nvd"
+      }
+    ]
+  }
+}

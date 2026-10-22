@@ -1,0 +1,132 @@
+{
+  "proxies": [
+    "traefik",
+    "lucaslorentz/caddy-docker-proxy",
+    "jc21/nginx-proxy-manager",
+    "nginxproxy/nginx-proxy",
+    "caddy"
+  ],
+  "products": [
+    {
+      "key": "plex",
+      "name": "Plex Media Server",
+      "cpe": "plex:media_server",
+      "images": ["plexinc/pms-docker", "linuxserver/plex", "lscr.io/linuxserver/plex", "ghcr.io/linuxserver/plex"],
+      "advice": "Disable Remote Access if you do not need it and do not forward port 32400 directly. Plex says servers older than 1.43.3.10861 that were reachable from the internet should be presumed compromised: check the Codecs folder for unknown .so/.dll files and rebuild from a clean install if in doubt."
+    },
+    {
+      "key": "jellyfin",
+      "name": "Jellyfin",
+      "cpe": "jellyfin:jellyfin",
+      "images": ["jellyfin/jellyfin", "linuxserver/jellyfin", "lscr.io/linuxserver/jellyfin", "ghcr.io/jellyfin/jellyfin"]
+    },
+    {
+      "key": "nextcloud",
+      "name": "Nextcloud Server",
+      "cpe": "nextcloud:nextcloud_server",
+      "images": ["nextcloud", "linuxserver/nextcloud", "lscr.io/linuxserver/nextcloud"]
+    },
+    {
+      "key": "gitea",
+      "name": "Gitea",
+      "cpe": "gitea:gitea",
+      "images": ["gitea/gitea"]
+    },
+    {
+      "key": "gitlab",
+      "name": "GitLab",
+      "cpe": "gitlab:gitlab",
+      "images": ["gitlab/gitlab-ce", "gitlab/gitlab-ee"]
+    },
+    {
+      "key": "grafana",
+      "name": "Grafana",
+      "cpe": "grafana:grafana",
+      "images": ["grafana/grafana", "grafana/grafana-oss", "grafana/grafana-enterprise"]
+    },
+    {
+      "key": "n8n",
+      "name": "n8n",
+      "cpe": "n8n:n8n",
+      "images": ["n8nio/n8n", "docker.n8n.io/n8nio/n8n"]
+    },
+    {
+      "key": "langflow",
+      "name": "Langflow",
+      "cpe": "langflow:langflow",
+      "images": ["langflowai/langflow"]
+    },
+    {
+      "key": "roundcube",
+      "name": "Roundcube Webmail",
+      "cpe": "roundcube:webmail",
+      "images": ["roundcube/roundcubemail"]
+    },
+    {
+      "key": "owncloud",
+      "name": "ownCloud Server",
+      "cpe": "owncloud:owncloud_server",
+      "images": ["owncloud/server"]
+    },
+    {
+      "key": "zammad",
+      "name": "Zammad",
+      "cpe": "zammad:zammad",
+      "images": ["ghcr.io/zammad/zammad", "zammad/zammad-docker-compose"]
+    },
+    {
+      "key": "jenkins",
+      "name": "Jenkins",
+      "cpe": "jenkins:jenkins",
+      "images": ["jenkins/jenkins"]
+    },
+    {
+      "key": "teamcity",
+      "name": "JetBrains TeamCity",
+      "cpe": "jetbrains:teamcity",
+      "images": ["jetbrains/teamcity-server"]
+    },
+    {
+      "key": "wordpress",
+      "name": "WordPress",
+      "cpe": "wordpress:wordpress",
+      "images": ["wordpress", "bitnami/wordpress"]
+    },
+    {
+      "key": "home-assistant",
+      "name": "Home Assistant",
+      "cpe": "home-assistant:home-assistant",
+      "images": ["homeassistant/home-assistant", "ghcr.io/home-assistant/home-assistant", "linuxserver/homeassistant", "lscr.io/linuxserver/homeassistant"]
+    },
+    {
+      "key": "vaultwarden",
+      "name": "Vaultwarden",
+      "cpe": "dani-garcia:vaultwarden",
+      "images": ["vaultwarden/server"]
+    },
+    {
+      "key": "portainer",
+      "name": "Portainer",
+      "cpe": "portainer:portainer",
+      "images": ["portainer/portainer-ce", "portainer/portainer-ee", "portainer/portainer"]
+    },
+    {
+      "key": "traefik",
+      "name": "Traefik",
+      "cpe": "traefik:traefik",
+      "images": ["traefik"]
+    },
+    {
+      "key": "onlyoffice",
+      "name": "ONLYOFFICE Docs",
+      "cpe": "onlyoffice:document_server",
+      "images": ["onlyoffice/documentserver"]
+    },
+    {
+      "key": "strapi",
+      "name": "Strapi",
+      "cpe": "strapi:strapi",
+      "images": ["strapi/strapi"]
+    }
+  ]
+}

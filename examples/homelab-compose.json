@@ -1,0 +1,233 @@
+{
+  "feed_source": "built-in snapshot",
+  "kev_catalog_version": "2026.10.21",
+  "epss_date": "2026-10-21",
+  "epss_min": 0.1,
+  "services_scanned": 7,
+  "findings": [
+    {
+      "category": "act",
+      "score": 90.0,
+      "service": "gitea",
+      "source": "examples/homelab-compose.yml",
+      "image": "gitea/gitea:1.26.4",
+      "product": "Gitea",
+      "version": "1.26.4",
+      "exposure": "proxied",
+      "exposure_detail": [
+        "routed by reverse proxy as git.example.com"
+      ],
+      "privilege": [],
+      "hits": [
+        {
+          "cve": "CVE-2026-60004",
+          "kev": {
+            "date_added": "2026-08-25",
+            "due_date": "2026-08-28",
+            "ransomware": false
+          },
+          "epss": 0.23988,
+          "fixed": "1.27.1",
+          "range_source": "nvd"
+        }
+      ],
+      "upgrade_to": "1.27.1",
+      "fix": [
+        "Upgrade Gitea to 1.27.1 or later.",
+        "Put authentication (forward-auth / basic auth) or an IP allow-list in front of this route on the reverse proxy."
+      ]
+    },
+    {
+      "category": "act",
+      "score": 70.0,
+      "service": "plex",
+      "source": "examples/homelab-compose.yml",
+      "image": "plexinc/pms-docker:1.43.2.10687-563d026ea",
+      "product": "Plex Media Server",
+      "version": "1.43.2.10687",
+      "exposure": "all-interfaces",
+      "exposure_detail": [
+        "0.0.0.0:32400->32400/tcp"
+      ],
+      "privilege": [],
+      "hits": [
+        {
+          "cve": "CVE-2026-96656",
+          "kev": {
+            "date_added": "2026-10-20",
+            "due_date": "2026-10-23",
+            "ransomware": false
+          },
+          "epss": 0.00758,
+          "fixed": "1.43.3.10861",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2026-96654",
+          "kev": {
+            "date_added": "2026-10-20",
+            "due_date": "2026-10-23",
+            "ransomware": false
+          },
+          "epss": 0.00432,
+          "fixed": "1.43.3.10861",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2026-96652",
+          "kev": {
+            "date_added": "2026-10-20",
+            "due_date": "2026-11-03",
+            "ransomware": false
+          },
+          "epss": 0.00423,
+          "fixed": "1.43.3.10861",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2026-96655",
+          "kev": {
+            "date_added": "2026-10-20",
+            "due_date": "2026-11-03",
+            "ransomware": false
+          },
+          "epss": 0.00423,
+          "fixed": "1.43.3.10861",
+          "range_source": "nvd"
+        }
+      ],
+      "upgrade_to": "1.43.3.10861",
+      "fix": [
+        "Upgrade Plex Media Server to 1.43.3.10861 or later.",
+        "Bind 32400 to loopback (\"127.0.0.1:32400:32400\") and reach it through a reverse proxy with authentication; remove any router port-forward for 32400 you do not need.",
+        "Disable Remote Access if you do not need it and do not forward port 32400 directly. Plex says servers older than 1.43.3.10861 that were reachable from the internet should be presumed compromised: check the Codecs folder for unknown .so/.dll files and rebuild from a clean install if in doubt."
+      ]
+    },
+    {
+      "category": "not-exposed",
+      "score": 30.0,
+      "service": "n8n",
+      "source": "examples/homelab-compose.yml",
+      "image": "n8nio/n8n:1.120.0",
+      "product": "n8n",
+      "version": "1.120.0",
+      "exposure": "lan",
+      "exposure_detail": [
+        "routed by reverse proxy as internal name n8n.home.arpa"
+      ],
+      "privilege": [],
+      "hits": [
+        {
+          "cve": "CVE-2025-68613",
+          "kev": {
+            "date_added": "2026-03-11",
+            "due_date": "2026-03-25",
+            "ransomware": false
+          },
+          "epss": 0.98994,
+          "fixed": "1.120.4",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2026-21858",
+          "epss": 0.78188,
+          "fixed": "1.121.0",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2026-1470",
+          "epss": 0.20683,
+          "fixed": "1.123.17",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2025-68668",
+          "epss": 0.13167,
+          "fixed": "2.0.0",
+          "range_source": "nvd"
+        }
+      ],
+      "upgrade_to": "2.0.0",
+      "fix": [
+        "Upgrade n8n to 2.0.0 or later."
+      ]
+    },
+    {
+      "category": "not-exposed",
+      "score": 10.0,
+      "service": "grafana",
+      "source": "examples/homelab-compose.yml",
+      "image": "grafana/grafana:8.2.6",
+      "product": "Grafana",
+      "version": "8.2.6",
+      "exposure": "loopback",
+      "exposure_detail": [
+        "127.0.0.1:3001->3000/tcp"
+      ],
+      "privilege": [],
+      "hits": [
+        {
+          "cve": "CVE-2021-43798",
+          "kev": {
+            "date_added": "2025-10-09",
+            "due_date": "2025-10-30",
+            "ransomware": false
+          },
+          "epss": 0.88503,
+          "fixed": "8.2.7",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2025-4123",
+          "epss": 0.97083,
+          "fixed": "10.4.18",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2022-31097",
+          "epss": 0.7006,
+          "fixed": "8.3.10",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2021-43813",
+          "epss": 0.57085,
+          "fixed": "8.3.2",
+          "range_source": "nvd"
+        },
+        {
+          "cve": "CVE-2023-0507",
+          "epss": 0.1546,
+          "fixed": "8.5.21",
+          "range_source": "nvd"
+        }
+      ],
+      "upgrade_to": "10.4.18",
+      "fix": [
+        "Upgrade Grafana to 10.4.18 or later."
+      ]
+    },
+    {
+      "category": "unknown",
+      "score": 0.0,
+      "service": "jellyfin",
+      "source": "examples/homelab-compose.yml",
+      "image": "jellyfin/jellyfin:latest",
+      "product": "Jellyfin",
+      "exposure": "all-interfaces",
+      "exposure_detail": [
+        "network_mode: host (every listening port is on the host)"
+      ],
+      "privilege": [
+        "host network"
+      ],
+      "hits": [],
+      "fix": [
+        "Drop network_mode: host and publish only the ports you need on 127.0.0.1.",
+        "Reduce privileges: host network."
+      ],
+      "note": "version unknown: the tag has no version (compose files carry no image labels; scan the running container instead); pin a versioned tag"
+    }
+  ],
+  "unrecognized": []
+}

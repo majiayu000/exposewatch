@@ -1,0 +1,41 @@
+# A typical homelab stack written the "quick start" way: ports on all
+# interfaces, a reverse proxy with public hostnames. exposewatch only reads
+# this file; it is never started.
+services:
+  traefik:
+    image: traefik:v3.7.16
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  plex:
+    image: plexinc/pms-docker:1.43.2.10687-563d026ea
+    ports:
+      - "32400:32400/tcp"
+
+  gitea:
+    image: gitea/gitea:1.26.4
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.git.rule: Host(`git.example.com`)
+
+  grafana:
+    image: grafana/grafana:8.2.6
+    ports:
+      - "127.0.0.1:3001:3000"
+
+  n8n:
+    image: n8nio/n8n:1.120.0
+    labels:
+      traefik.http.routers.n8n.rule: Host(`n8n.home.arpa`)
+
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    network_mode: host
+
+  gitea-patched:
+    image: gitea/gitea:1.27.3
+    ports:
+      - "3002:3000"

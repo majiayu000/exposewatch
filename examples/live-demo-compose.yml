@@ -1,0 +1,21 @@
+# exposewatch live demo. Every port is bound to 127.0.0.1 only.
+name: exposewatch-demo
+services:
+  plex:
+    image: plexinc/pms-docker:1.43.2.10687-563d026ea
+    ports: ["127.0.0.1:32400:32400"]
+  gitea-old:
+    image: gitea/gitea:1.26.4
+    ports: ["127.0.0.1:3000:3000"]
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.git.rule: Host(`git.example.com`)
+  gitea-new:
+    image: gitea/gitea:1.27.3
+    ports: ["127.0.0.1:3002:3000"]
+  grafana:
+    image: grafana/grafana:8.2.6
+    ports: ["127.0.0.1:3001:3000"]
+  traefik:
+    image: traefik:v3.7.16
+    ports: ["127.0.0.1:8443:443"]

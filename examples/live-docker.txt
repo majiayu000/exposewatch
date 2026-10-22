@@ -1,0 +1,35 @@
+exposewatch: 7 services scanned; data: KEV 2026.10.21 / EPSS 2026-10-21 (min 0.1) from built-in snapshot
+
+== Vulnerable and exploited, but not published beyond this host / LAN (3)
+
+ 1. [ 11.5] exposewatch-demo-gitea-old-1  Gitea 1.26.4
+    image:    gitea/gitea:1.26.4  (docker)
+    exposure: loopback only: 127.0.0.1:3000->3000/tcp (probe: open); routed as git.example.com by a reverse proxy that is loopback only
+    privilege: runs as root
+    vuln:     CVE-2026-60004 KEV 2026-08-25 EPSS 24.0% (fixed: 1.27.1)
+    fix:      Upgrade Gitea to 1.27.1 or later.
+
+ 2. [ 11.5] exposewatch-demo-plex-1  Plex Media Server 1.43.2.10687
+    image:    plexinc/pms-docker:1.43.2.10687-563d026ea  (docker)
+    exposure: loopback only: 127.0.0.1:32400->32400/tcp (probe: open)
+    privilege: runs as root
+    vuln:     CVE-2026-96656 KEV 2026-10-20 EPSS 0.8% (fixed: 1.43.3.10861)
+    vuln:     CVE-2026-96654 KEV 2026-10-20 EPSS 0.4% (fixed: 1.43.3.10861)
+    vuln:     CVE-2026-96652 KEV 2026-10-20 EPSS 0.4% (fixed: 1.43.3.10861)
+    vuln:     CVE-2026-96655 KEV 2026-10-20 EPSS 0.4% (fixed: 1.43.3.10861)
+    fix:      Upgrade Plex Media Server to 1.43.3.10861 or later.
+    fix:      Disable Remote Access if you do not need it and do not forward port 32400 directly. Plex says servers older than 1.43.3.10861 that were reachable from the internet should be presumed compromised: check the Codecs folder for unknown .so/.dll files and rebuild from a clean install if in doubt.
+
+ 3. [ 10.0] exposewatch-demo-grafana-1  Grafana 8.2.6
+    image:    grafana/grafana:8.2.6  (docker)
+    exposure: loopback only: 127.0.0.1:3001->3000/tcp (probe: open)
+    vuln:     CVE-2021-43798 KEV 2025-10-09 EPSS 88.5% (fixed: 8.2.7)
+    vuln:     CVE-2025-4123 EPSS 97.1% (fixed: 10.4.18)
+    vuln:     CVE-2022-31097 EPSS 70.1% (fixed: 8.3.10)
+    vuln:     CVE-2021-43813 EPSS 57.1% (fixed: 8.3.2)
+    vuln:     CVE-2023-0507 EPSS 15.5% (fixed: 8.5.21)
+    fix:      Upgrade Grafana to 10.4.18 or later.
+
+Nothing matches all three conditions (public + vulnerable + exploited).
+
+Not in catalog, not checked (2): hunter-redis (redis:7-alpine), hunter-postgres (postgres:16-alpine)
