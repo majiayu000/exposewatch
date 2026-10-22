@@ -14,8 +14,10 @@
 exposewatch scan                     # 读 docker/podman socket
 exposewatch scan --compose a.yml     # 只分析 compose 文件（可多次给）
 exposewatch scan --probe             # 额外对已发布端口做 TCP connect（只连本机）
-exposewatch scan --external 203.0.113.7   # 显式开启外部视角（Shodan InternetDB）
+exposewatch scan --external <你的公网IP>  # 显式开启外部视角（Shodan InternetDB，实验功能，只接受公网地址）
 exposewatch scan --format json|markdown|table
+exposewatch scan --project media     # 只看某个 compose 项目
+exposewatch                          # 不带子命令等同于 scan
 exposewatch update                   # 唯一会出网的命令：重建漏洞数据
 ```
 

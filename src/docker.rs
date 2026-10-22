@@ -43,11 +43,17 @@ pub fn find_socket(explicit: Option<&Path>) -> Result<PathBuf> {
 }
 
 fn get(socket: &Path, path: &str) -> Result<Value> {
-    let mut s = UnixStream::connect(socket)
-        .with_context(|| format!("connecting to {}", socket.display()))?;
+    let mut s = UnixStream::connect(socket).map_err(|e| {
+        let hint = if e.kind() == std::io::ErrorKind::PermissionDenied {
+            " (add your user to the docker group, or run with sudo)"
+        } else {
+            ""
+        };
+        anyhow::anyhow!("connecting to {}: {e}{hint}", socket.display())
+    })?;
     s.set_read_timeout(Some(Duration::from_secs(30)))?;
-    // HTTP/1.0 avoids chunked bodies; some daemons (OrbStack) still keep the
-    // connection open, so the body is read by Content-Length.
+    // Some daemons (OrbStack) keep the connection open and chunk the body even
+    // for HTTP/1.0, so the body is read by Content-Length or chunked framing.
     write!(
         s,
         "GET {path} HTTP/1.0\r\nHost: localhost\r\nConnection: close\r\n\r\n"

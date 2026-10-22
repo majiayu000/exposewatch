@@ -3,7 +3,7 @@
   "kev_catalog_version": "2026.10.21",
   "epss_date": "2026-10-21",
   "epss_min": 0.1,
-  "services_scanned": 7,
+  "services_scanned": 5,
   "findings": [
     {
       "category": "not-exposed",
@@ -162,8 +162,5 @@
       ]
     }
   ],
-  "unrecognized": [
-    "hunter-redis (redis:7-alpine)",
-    "hunter-postgres (postgres:16-alpine)"
-  ]
+  "unrecognized": []
 }

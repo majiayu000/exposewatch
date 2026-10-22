@@ -2,6 +2,15 @@
 name = "exposewatch"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.88"
+description = "Find homelab Docker containers that are exposed to the network, run a vulnerable version, and have an actively exploited CVE (CISA KEV, EPSS), ranked with the fix"
+license = "MIT"
+repository = "https://github.com/majiayu000/exposewatch"
+homepage = "https://github.com/majiayu000/exposewatch"
+readme = "README.md"
+keywords = ["homelab", "docker", "security", "cve", "self-hosted"]
+categories = ["command-line-utilities", "development-tools"]
+exclude = ["docs/social-preview.png", "examples/*.json"]
 
 [dependencies]
 anyhow = "1.0.104"

@@ -1,44 +1,36 @@
 # exposewatch
 
-One command that lists the containers on your homelab or small server that are **open to the network, running a vulnerable version, and affected by a vulnerability that is being exploited right now** — ranked, with the fix.
+[![CI](https://github.com/majiayu000/exposewatch/actions/workflows/ci.yml/badge.svg)](https://github.com/majiayu000/exposewatch/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/majiayu000/exposewatch)](https://github.com/majiayu000/exposewatch/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Image scanners tell you an image has 300 CVEs. Update notifiers tell you a new tag exists. Neither tells you that your Plex is on `0.0.0.0:32400`, still on 1.43.2, and that Plex2Shell (CISA KEV, 2026-10-20) is being used to drop miners on exactly that setup. exposewatch multiplies those three facts and prints only what matters.
+**exposewatch finds the exposed containers on your homelab or self-hosted server that run a vulnerable version with an actively exploited vulnerability (CISA KEV, EPSS)**: Docker and Podman containers or compose stacks, ranked by danger, each with the exact fix. Built for cases like Plex2Shell, the Plex Media Server exploit chain added to CISA KEV on 2026-10-20.
 
-- Reads the Docker / Podman socket (GET only) or your compose files. Starts nothing, changes nothing.
-- Exposure from port bindings (`0.0.0.0` vs `127.0.0.1` vs LAN), `network_mode: host`, and Traefik / caddy-docker-proxy routes with public hostnames.
-- Application versions (not OS packages) matched against NVD CPE ranges, with OSV as fallback. This is how it catches Plex, which package scanners and OSV do not cover.
-- "Exploited" means CISA KEV, or EPSS ≥ 0.1. KEV always wins because EPSS lags: the Plex2Shell CVEs were in KEV while their EPSS was under 1%.
-- Scans are offline. Only `exposewatch update` (refresh data) and the opt-in `--external <your IP>` touch the network.
+Image scanners say an image has 300 CVEs. Update notifiers say a new tag exists. Neither says that your Plex is on `0.0.0.0:32400`, still on 1.43.2, and that this exact setup is being used to drop crypto miners. exposewatch checks three things together (open to the network, vulnerable version, exploited in the wild) and prints only what passes all three.
 
-## Install
+## Quick start
 
 ```bash
-cargo install --path .
+# macOS (Apple silicon); see Releases for macOS x86_64 and Linux x86_64
+curl -sL https://github.com/majiayu000/exposewatch/releases/latest/download/exposewatch-aarch64-apple-darwin.tar.gz | tar xz
+./exposewatch                     # scan running containers via the Docker/Podman socket
 ```
 
-Single static binary, no database download. A data snapshot is built in; refresh it with:
+Or build from source (Rust 1.88+): `cargo install --git https://github.com/majiayu000/exposewatch`
 
 ```bash
-exposewatch update
+exposewatch --compose docker-compose.yml   # static check of a compose file, starts nothing
+exposewatch --project media                # only one compose project
+exposewatch --probe                        # also TCP-connect to your published ports on this host
+exposewatch --format json                  # or markdown
+exposewatch update                         # refresh CISA KEV + EPSS + NVD + OSV data
 ```
 
-`update` pulls CISA KEV, FIRST EPSS, NVD (one query per catalog product; set `NVD_API_KEY` to go faster) and OSV, and writes `~/.cache/exposewatch/feed.json`.
-
-## Use
-
-```bash
-exposewatch scan                          # running containers via the docker/podman socket
-exposewatch scan --compose docker-compose.yml
-exposewatch scan --probe                  # also TCP-connect to published ports on this host
-exposewatch scan --external 203.0.113.7   # YOUR public IP: ask Shodan InternetDB what the internet sees
-exposewatch scan --format json            # or markdown
-```
-
-Exit code is 2 when something matches all three conditions, so it can run from cron.
+Exit code 2 means something matched all three conditions, so it works from cron.
 
 ## Example output
 
-`exposewatch scan --compose examples/homelab-compose.yml` (first section; full output in [examples/homelab-compose.txt](examples/homelab-compose.txt)):
+`exposewatch --compose examples/homelab-compose.yml` (first section; full output in [examples/homelab-compose.txt](examples/homelab-compose.txt)):
 
 ```text
 exposewatch: 7 services scanned; data: KEV 2026.10.21 / EPSS 2026-10-21 (min 0.1) from built-in snapshot
@@ -65,28 +57,47 @@ exposewatch: 7 services scanned; data: KEV 2026.10.21 / EPSS 2026-10-21 (min 0.1
 ...
 ```
 
-Live run against the Docker socket, with the same old images started from [examples/live-demo-compose.yml](examples/live-demo-compose.yml) bound to 127.0.0.1 only: all three vulnerable containers are found but land in the "not published" section, and the patched Gitea 1.27.3 and Traefik are not flagged. See [examples/live-docker.txt](examples/live-docker.txt). JSON and Markdown variants are in [examples/](examples/).
+Live run against the Docker socket with the same old images, all bound to 127.0.0.1 ([examples/live-demo-compose.yml](examples/live-demo-compose.yml)): Plex 1.43.2, Gitea 1.26.4 and Grafana 8.2.6 are found and correctly placed in the "not published" section, and the patched Gitea 1.27.3 and Traefik 3.7.16 are not flagged. See [examples/live-docker.txt](examples/live-docker.txt); JSON and Markdown versions are in [examples/](examples/).
 
-## How it ranks
+## How it compares
 
-```
-score = 100 × threat × exposure × privilege
-threat    = 1.0 if any matched CVE is in KEV, else the highest EPSS
-exposure  = internet 1.0 · via reverse proxy 0.9 · all interfaces 0.7 · LAN 0.3 · loopback 0.1 · not published 0.05
-privilege = 1 + 0.15 per: privileged, docker socket, host network, root, SYS_ADMIN/NET_ADMIN (max 1.5)
-```
+| | trivy / grype / docker scout | Watchtower / diun / WUD / cup | CrowdSec | **exposewatch** |
+|---|---|---|---|---|
+| Knows a port is on 0.0.0.0 vs 127.0.0.1, follows Traefik/Caddy routes | ✗ | ✗ | ✗ | ✓ |
+| Version of closed-source apps such as Plex | ✗ (package-based) | ✗ | ✗ | ✓ NVD CPE ranges |
+| CISA KEV / EPSS | grype, scout ✓ | ✗ | ✗ | ✓ KEV outranks EPSS |
+| Ranks by exposure × exploitation × privilege | ✗ | ✗ | ✗ | ✓ |
+| Tells you how to close the exposure | ✗ | ✗ | blocks IPs | ✓ |
+| OS package CVEs, new-image alerts | ✓ / ✗ | ✗ / ✓ | ✗ | ✗ (use them for that) |
 
-Only findings that are public (all interfaces or above), in an affected version range, and exploited go into the top section. Everything else is listed separately, including services whose version cannot be determined, so nothing disappears silently.
+Full feature-by-feature table with star counts and sources: [docs/comparison.md](docs/comparison.md).
 
-Details: [docs/design.md](docs/design.md). Research and comparison with trivy, grype, docker scout, Watchtower, diun, CrowdSec and others: [docs/research.md](docs/research.md).
+## How it works
+
+- **Discovery**: reads the Docker or Podman socket (GET requests only; Docker Desktop, OrbStack, Colima and rootless Podman paths are found automatically) or parses compose files. Starts nothing, changes nothing.
+- **Exposure**: port bindings (`0.0.0.0` / LAN / loopback), `network_mode: host`, and Traefik or caddy-docker-proxy routes whose hostname is public and whose proxy is published.
+- **Version → CVE**: image tag or OCI version label, matched against NVD CPE ranges for 20 popular self-hosted apps (Plex, Jellyfin, Nextcloud, Gitea, GitLab, Grafana, n8n, Langflow, Roundcube, Vaultwarden, Home Assistant, WordPress and more; see [data/catalog.json](data/catalog.json)), with OSV as a fallback.
+- **Exploited**: CISA KEV, or EPSS ≥ 0.1. KEV always wins because EPSS lags: the Plex2Shell CVEs were in KEV while their EPSS was under 1%.
+- **Score**: `100 × threat × exposure × privilege`. Threat is 1.0 for KEV, otherwise the EPSS score. Exposure ranges from 1.0 (internet) down to 0.05 (not published). Privilege rises with privileged mode, a mounted docker.sock, host network or root.
+- **Offline by default**: a data snapshot is built in; only `update` and `--external` use the network.
+
+Design notes: [docs/design.md](docs/design.md). Research on Plex2Shell and other exploited self-hosted apps: [docs/research.md](docs/research.md).
+
+## Experimental: outside view
+
+`exposewatch --external <your public IP>` asks [Shodan InternetDB](https://internetdb.shodan.io/) which ports internet scanners have already seen open on that IP. Bindings on those ports are then marked "internet (confirmed)" instead of "all interfaces". It sends only that IP to Shodan and refuses loopback, private, CGNAT and reserved addresses, because InternetDB returns unrelated data for them. It has not yet been tested against a real public IP.
 
 ## Limits
 
-- Only products in [data/catalog.json](data/catalog.json) are checked (20 common self-hosted apps); others are listed as "not in catalog".
-- Version comes from the image tag or the image's version label. `latest` without a version label is reported as "version unknown".
-- `all interfaces` is not proof of internet exposure behind NAT; use `--external` to confirm.
-- Nginx Proxy Manager databases, Caddyfiles and nginx.conf are not parsed yet.
+- Only apps in the catalog are checked; everything else is listed as "not in catalog".
+- A `latest` tag without a version label is reported as "version unknown", not guessed.
+- "All interfaces" behind NAT is not proof of internet exposure; use `--external` to confirm.
+- Nginx Proxy Manager, Caddyfile and nginx.conf routes are not parsed yet.
 
 ## Safety
 
-exposewatch never sends exploit traffic. `--probe` only opens a TCP connection to loopback or private addresses that your own containers publish. `--external` sends only the IP you give it to internetdb.shodan.io, which answers from its existing scan database.
+exposewatch never sends exploit traffic and never scans other people's addresses. `--probe` only opens a TCP connection to loopback or private addresses your own containers publish.
+
+## License
+
+MIT

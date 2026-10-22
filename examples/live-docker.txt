@@ -1,4 +1,4 @@
-exposewatch: 7 services scanned; data: KEV 2026.10.21 / EPSS 2026-10-21 (min 0.1) from built-in snapshot
+exposewatch: 5 services scanned; data: KEV 2026.10.21 / EPSS 2026-10-21 (min 0.1) from built-in snapshot
 
 == Vulnerable and exploited, but not published beyond this host / LAN (3)
 
@@ -31,5 +31,3 @@ exposewatch: 7 services scanned; data: KEV 2026.10.21 / EPSS 2026-10-21 (min 0.1
     fix:      Upgrade Grafana to 10.4.18 or later.
 
 Nothing matches all three conditions (public + vulnerable + exploited).
-
-Not in catalog, not checked (2): hunter-redis (redis:7-alpine), hunter-postgres (postgres:16-alpine)
