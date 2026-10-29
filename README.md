@@ -11,9 +11,10 @@ Image scanners say an image has 300 CVEs. Update notifiers say a new tag exists.
 ## Quick start
 
 ```bash
-# macOS (Apple silicon); see Releases for macOS x86_64 and Linux x86_64
+brew install majiayu000/tap/exposewatch   # macOS, Linux x86_64
+# or the prebuilt binary, macOS (Apple silicon); see Releases for macOS x86_64 and Linux x86_64
 curl -sL https://github.com/majiayu000/exposewatch/releases/latest/download/exposewatch-aarch64-apple-darwin.tar.gz | tar xz
-./exposewatch                     # scan running containers via the Docker/Podman socket
+exposewatch                       # scan running containers via the Docker/Podman socket (./exposewatch after curl)
 ```
 
 Or build from source (Rust 1.88+): `cargo install --git https://github.com/majiayu000/exposewatch`
